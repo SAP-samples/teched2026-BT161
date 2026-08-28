@@ -8,7 +8,7 @@ Before approving a new agent, a responsible governance team asks: do we already 
 
 ## Step 1 — Open the AI Governance Assistant
 
-1. In AI Agent Hub, open the **AI Governance Assistant** (also referred to as the EA Assistant).
+1. In AI Agent Hub, open the **AI Governance Assistant**.
 2. The assistant has access to your full agent inventory, fact sheet data, and architectural context from your connected LeanIX workspace.
 
 ## Step 2 — Query for Similar Agents
@@ -26,12 +26,14 @@ Review the results. The assistant should surface one or more candidate agents wi
 ## Step 3 — Review the Candidate Agent
 
 1. From the assistant's response, click through to the fact sheet of the most relevant candidate agent.
-2. Review its details:
-   - **Lifecycle status** — is it active, phase-in, or phase-out?
+2. Review its details — including the **Analytics** tab to understand its usage history:
+   - **Total Sessions**, **First Active**, **Last Active**, **Average Tokens per Session** — how long has it been in use and how heavily?
+   - **Lifecycle status** — is it Active, Phase In, or Phase Out?
    - **Description** — does it overlap significantly with the new agent?
    - **Owner** — is there an accountable person?
-   - **Verification status** — was it ever formally approved?
-3. In this exercise, the candidate agent has already been marked as **Phase Out** — it is being replaced, and the new agent is its successor.
+   - **Approval State** — was it ever formally verified?
+3. Also check the **Decisions** panel in the right sidebar — it shows architecture decisions already linked to this agent.
+4. In this exercise, the candidate agent has already been marked as **Phase Out** — it is being replaced, and the new agent is its successor.
 
 ## Step 4 — Set the Predecessor Relationship
 
