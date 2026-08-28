@@ -51,6 +51,26 @@ SAP AI Agent Hub gives you a single place to view and govern all AI agents, MCP 
 | SAP AI Agent Hub | *(provided at session)* | *(provided at session)* |
 | Joule Studio | *(individual, provided at session)* | SAP Universal ID |
 
+## Related Sessions
+
+This workshop is the hands-on complement to the following sessions in the **Build Enterprise-Grade AI Governance as a Foundation** subtrack. Attending them before or after this workshop will deepen your understanding.
+
+| Session | Type | Title | Why it's relevant to this workshop |
+|---------|------|-------|-------------------------------------|
+| ST127 | Strategy Talk | Scale AI with confidence with governance built for the agentic era | Frames the problem this workshop solves — AI spreading faster than organizations can govern it |
+| BT102 | Deep Dive | From AI sprawl to AI governance with SAP AI Agent Hub | Deep-dive on the product you will use in this workshop; ideal preparation if you are new to SAP AI Agent Hub |
+| BT116 | Deep Dive | How SAP SE governs AI sprawl with SAP AI Agent Hub | Real-world use case from SAP's own corporate IT team — the governance workflow in practice |
+| BT115 | Deep Dive | Monitor your AI agents with the SAP Cloud ALM solution | Covers the observability layer that sits alongside governance — what happens after you verify an agent |
+| BT800 | Road Map | SAP LeanIX solutions road map for AI-native enterprise architecture | What's coming next for the platform underlying this workshop |
+
+Attending sessions in the **Accelerate and Derisk Your AI-Native Transformation** subtrack provides further context on how AI governance connects to the broader enterprise architecture practice:
+
+| Session | Type | Title |
+|---------|------|-------|
+| BT100 | Deep Dive | Make architecture data collection faster, easier, and more reliable with AI |
+| BT160 | Hands-on Workshop | Build AI-native tools and agents with MCP server for SAP LeanIX solutions |
+| ST101 | Strategy Talk | Navigating AI-native enterprise architecture with SAP LeanIX solutions |
+
 ## Further Resources
 
 - [SAP AI Agent Hub Documentation](https://help.sap.com)
