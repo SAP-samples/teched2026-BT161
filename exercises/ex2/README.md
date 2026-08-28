@@ -1,53 +1,46 @@
-# Exercise 2 — Assess Against Governance Criteria
+# Exercise 2 — From Discovery to Inventory
 
 ## Overview
 
-Discovery tells you what exists. Assessment tells you what to do about it. In this exercise you will apply a governance framework to a set of agents, scoring them against criteria that determine whether they are safe to run in your organization.
+Discovery is just an alert. Governance starts when you decide what to do about it. In this exercise you will open the inbox, investigate a newly discovered agent, review its analytics, and add it to your governed inventory.
 
-**Duration:** 20 minutes
+**Duration:** 15 minutes
 
-## Background
+## Step 1 — Open the Inbox
 
-Not all shadow AI agents are equally risky. A low-impact internal summarization agent is very different from an agent with access to HR data or financial systems. Your governance framework helps you make consistent, defensible decisions about which agents to approve, flag for remediation, or decommission.
+1. In AI Agent Hub, navigate to the **Inbox**.
+2. You will see a list of items requiring your attention. Locate the discovery notification for the agent your trainer has pre-identified for this exercise.
+3. Open the discovery item.
 
-SAP AI Agent Hub provides a structured assessment view where you can evaluate each agent against defined governance criteria.
+## Step 2 — Review the Discovery Details
 
-## Step 1 — Open the Governance Assessment View
+The discovery item shows you what AI Agent Hub found automatically:
 
-1. In AI Agent Hub, navigate to the **Governance** section.
-2. Select **Assessments** (or equivalent view in your tenant).
-3. You will see agents queued for assessment. The workshop pre-selects a representative set of 5 agents for you to work through.
+- **Agent name and description** — what the agent claims to do
+- **Source environment** — where it was found (SAP BTP, S/4HANA, third-party system, etc.)
+- **Discovery date** — when it first appeared in the landscape
+- **Data connections** — which systems and APIs the agent has access to
 
-## Step 2 — Review the Governance Criteria
+Read through the details. Treat yourself as someone seeing this agent for the first time.
 
-Before assessing, familiarize yourself with the criteria used in this workshop:
+## Step 3 — Check the Analytics
 
-| Criterion | What it evaluates |
-|-----------|-------------------|
-| **Data Sensitivity** | Does the agent access personal, confidential, or regulated data? |
-| **Business Criticality** | Would failure or misuse of this agent impact business operations? |
-| **Compliance Alignment** | Does the agent's behavior align with applicable policies (GDPR, AI Act, internal policies)? |
-| **Auditability** | Are the agent's decisions and actions logged and traceable? |
-| **Authorization Scope** | Does the agent operate within its intended permission boundaries? |
+1. From the discovery item, navigate to the **Analytics** tab or section.
+2. Review available usage data:
+   - How often has this agent been invoked?
+   - Which users or teams have been using it?
+   - What data has it accessed?
 
-## Step 3 — Assess Agent A (Guided)
+> **Think about it:** If an agent has been running for 3 months with 400+ invocations and no governance record, what does that tell you about your organization's AI adoption patterns?
 
-1. Open the first agent in the assessment queue (your trainer will identify which one).
-2. For each governance criterion, select a rating:
-   - **Meets criteria** — no issues identified
-   - **Needs remediation** — gaps exist but agent can continue with conditions
-   - **Non-compliant** — agent should not run until issues are resolved
-3. Add a comment explaining your rating for at least two criteria.
-4. Save the assessment.
+## Step 4 — Add to Inventory
 
-## Step 4 — Assess Agents B and C (Independent)
-
-Repeat the assessment process for two more agents from the queue. Use your judgment based on the metadata available.
-
-> **Tip:** For agents with missing metadata (no data access description, no owner), default to **Needs remediation** — you cannot assess what you cannot see.
+1. Once you have reviewed the discovery details and analytics, locate the **Add to Inventory** action.
+2. Confirm the action. The agent is now part of your governed inventory — it has moved from "discovered" to "under governance review."
+3. Notice that the agent's status in the inventory is now **Unverified** — it is acknowledged, but not yet approved to run.
 
 ## Summary
 
-You have now assessed three agents against your governance framework. In Exercise 3, you will assign ownership and risk classification to follow up on your findings.
+The agent is now in your inventory. In Exercise 3, you will use the AI Governance Assistant to find out whether your organization already has agents doing something similar — and whether one of them should be the predecessor of this new one.
 
-[Back: Exercise 1](../ex1/README.md) | [Next: Exercise 3 — Assign Ownership & Classify Risk](../ex3/README.md)
+[Back: Exercise 1](../ex1/README.md) | [Next: Exercise 3 — Find Similar Agents & Set a Predecessor](../ex3/README.md)

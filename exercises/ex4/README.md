@@ -1,47 +1,73 @@
-# Exercise 4 — Verify a Compliant Agent
+# Exercise 4 — Complete the Governance Profile
 
 ## Overview
 
-Verification is the governance decision point. A verified agent is one your organization has formally reviewed and approved to operate. In this exercise you will mark a fully assessed and owned agent as verified, and understand what that status means at runtime.
+A verified agent needs a complete governance record. In this exercise you will review the new agent's fact sheet, identify the gaps, simulate an owner conversation, and use the AI Governance Assistant to fill in the governance section — including EU AI Act classification.
 
-**Duration:** 10 minutes
+**Duration:** 20 minutes
 
-## Background
+## Step 1 — Review the Fact Sheet
 
-In SAP AI Agent Hub, **verification** is not just a label — it is an enforcement signal. Verified agents can be surfaced to users in Joule Studio. Unverified agents are blocked or hidden. This connects governance decisions made in AI Agent Hub directly to the user experience in Joule Studio.
+Open the new agent's fact sheet in AI Agent Hub and review the following fields:
 
-## Step 1 — Identify a Verification-Ready Agent
+| Field | What to check |
+|-------|---------------|
+| **Owner** | Is there a responsible person or team assigned? |
+| **Architecture Decision** | Is this agent aligned to an approved architecture decision? |
+| **Description** | Is it accurate and complete enough for a governance review? |
+| **Data Access** | Which systems and data sources does it connect to? |
+| **AI Governance Section** | Are the regulatory and risk fields completed? |
 
-An agent is ready for verification when it has:
-- A completed governance assessment (all criteria rated)
-- An assigned owner
-- A risk classification
+Note which fields are empty or incomplete — these are your governance gaps.
 
-From your Agent Inventory, identify one agent that meets all three criteria (based on your work in Exercises 2 and 3).
+## Step 2 — Check Architecture Decision Alignment
 
-## Step 2 — Verify the Agent
+1. Locate the **Architecture Decision** field or relation on the fact sheet.
+2. If an architecture decision is linked, review it — does the agent's design and purpose align with the decision?
+3. If no architecture decision is linked, note this as a gap.
 
-1. Open the agent's detail view.
-2. Locate the **Verification Status** field or the **Verify** action.
-3. Review the verification checklist — confirm that assessment, ownership, and risk classification are complete.
-4. Click **Verify** (or set status to **Verified**).
-5. Add a short verification note (e.g., "Assessed BT161 workshop — low risk, owner assigned, compliant with data handling policy").
-6. Save.
+> **Tip:** Use the AI Governance Assistant to ask: *"Is there an architecture decision in our workspace that covers agents of this type?"*
 
-The agent's status should now show as **Verified**.
+## Step 3 — Simulate the Owner Conversation
 
-## Step 3 — Understand What Verification Gates
+In a real governance process, you would reach out to the agent's owner (or the team that built it) to fill in missing information. For this exercise, your trainer has provided the answers you would have received:
 
-Take a moment to review what changes after an agent is verified:
+**Simulated owner response:**
+- *"The agent was built by the [TEAM NAME] team to support [USE CASE]."*
+- *"It accesses [SYSTEM/DATA] to perform [ACTION]."*
+- *"We consider it a limited-risk agent under the EU AI Act — it supports human decision-making but does not make autonomous decisions with legal or significant personal impact."*
+- *"There is no architecture decision formally linked, but it follows the standards from [DECISION NAME]."*
 
-- The agent becomes eligible to appear in **Joule Studio** for end users
-- It is included in governance reporting as a compliant agent
-- Future changes to the agent (new data access, new permissions) may trigger a re-verification requirement
+Use these answers in the next step.
 
-> **Think about it:** What would happen in your organization if an agent's permissions were expanded after verification? Who should be notified?
+## Step 4 — Update the Governance Section via the AI Governance Assistant
+
+1. Open the **AI Governance Assistant**.
+2. Ask it to help you update the governance fields based on the owner response. For example:
+
+   > *"Based on this description, help me fill in the AI governance section for this agent. The owner confirmed it is a limited-risk system under the EU AI Act. It supports human decision-making in [USE CASE] and accesses [DATA]."*
+
+3. Review the assistant's suggested updates and apply them to the fact sheet.
+
+## Step 5 — Set the EU AI Act Classification
+
+1. Locate the **EU AI Act** section in the governance profile.
+2. Set the **Risk Category** based on the agent's characteristics:
+
+| Risk Category | When it applies |
+|---------------|----------------|
+| **Unacceptable risk** | Prohibited systems — e.g., biometric mass surveillance, social scoring |
+| **High risk** | Systems in regulated sectors or with significant impact on individuals — e.g., HR decisions, credit scoring, critical infrastructure |
+| **Limited risk** | Systems with transparency obligations — e.g., chatbots, AI-generated content |
+| **Minimal risk** | All other AI systems with no specific regulatory requirements |
+
+3. For this agent, select **Limited risk** based on the owner's description.
+4. Save all changes.
+
+> **Note:** The exact EU AI Act fields and classification guidance in AI Agent Hub are subject to confirmation with the responsible product and compliance team. The categories above reflect the EU AI Act (Regulation 2024/1689) as published.
 
 ## Summary
 
-You have made your first formal governance decision. In Exercise 5, you will switch to Joule Studio and see how this decision affects the user-facing experience.
+The governance profile is complete: owner confirmed, architecture alignment documented, EU AI Act classification set. The agent is ready for verification. In Exercise 5, you will formally approve it.
 
-[Back: Exercise 3](../ex3/README.md) | [Next: Exercise 5 — Experience Enforcement in Joule Studio](../ex5/README.md)
+[Back: Exercise 3](../ex3/README.md) | [Next: Exercise 5 — Verify the Agent](../ex5/README.md)

@@ -8,34 +8,32 @@ Working inside the **SAP AI Agent Hub** solution, you will discover agents acros
 
 ## Business Scenario
 
-> You have just been appointed **Head of AI Governance** at a mid-size enterprise running SAP. The company has been adopting AI agents fast — some procured, some built internally, some running completely under the radar. The CISO has flagged a compliance risk. The board wants a full AI agent inventory, risk classification, and enforcement in place within 30 days.
+> You are the **Head of AI Governance** at a mid-size enterprise running SAP. You start your week by checking the SAP AI Agent Hub dashboard — your command center for everything AI in the organization.
 >
-> Today is day one. You open SAP AI Agent Hub.
+> Three new agents have been discovered in the landscape. One of them is unknown to you. You need to understand what it does, whether it duplicates something that already exists, who owns it, whether it meets your governance and regulatory requirements, and ultimately decide whether to approve it to run in production.
 
-## Learning Objectives
+## What You Will Learn
 
-By the end of this workshop you will be able to:
+SAP AI Agent Hub gives you a single place to view and govern all AI agents, MCP servers, and LLMs deployed across your landscape — SAP-native, custom-built, and third-party. In this workshop you will experience the full governance lifecycle for a newly discovered agent:
 
-- Navigate the SAP AI Agent Hub and understand its role in AI governance
-- Discover agents running across SAP and third-party environments
-- Assess agents against a governance framework
-- Assign ownership and risk classification to individual agents
-- Verify compliant agents and understand what verification gates at runtime
-- Experience how governance decisions affect agent availability in Joule Studio
-- Decommission non-compliant or redundant agents and manage succession
+- Use the **dashboard and inbox** to spot and triage new discoveries
+- Use the **AI Governance Assistant** to find similar agents already in your landscape
+- Manage **agent succession** by linking a phased-out agent as a predecessor
+- Complete a full **governance profile**: ownership, architecture alignment, and EU AI Act classification
+- **Verify** the agent so it is approved to run in production
+- **Test the agent in Joule Studio** — only verified agents are allowed to run
 
 ## Session Structure
 
 | # | Exercise | Description | Duration |
 |---|----------|-------------|----------|
-| GS | [Getting Started](exercises/ex0/README.md) | Log in to AI Agent Hub and Joule Studio; orient in the pre-populated landscape | 15 min |
-| 1 | [Discover the Shadow AI Landscape](exercises/ex1/README.md) | Navigate the agent inventory; surface agents across SAP and third-party environments | 15 min |
-| 2 | [Assess Against Governance Criteria](exercises/ex2/README.md) | Apply the governance framework; score agents on data access, criticality, and compliance | 20 min |
-| 3 | [Assign Ownership & Classify Risk](exercises/ex3/README.md) | Assign responsible owners; set risk classification; document data sensitivity | 15 min |
-| 4 | [Verify a Compliant Agent](exercises/ex4/README.md) | Mark a fully assessed and owned agent as verified; understand enforcement implications | 10 min |
-| 5 | [Experience Enforcement in Joule Studio](exercises/ex5/README.md) | Observe how verified vs. unverified agents behave in your Joule Studio instance | 10 min |
-| 6 | [Decommission a Non-Compliant Agent](exercises/ex6/README.md) | Remove verification, mark as phased out, assign a successor agent | 5 min |
-| 7 *(optional)* | [Governance Posture & Reporting](exercises/ex7/README.md) | Review the governance dashboard; understand coverage gaps; export a stakeholder summary | 10 min |
+| GS | [Getting Started](exercises/ex0/README.md) | Log in to AI Agent Hub and Joule Studio; orient in the environment | 10 min |
+| 1 | [The Governance Dashboard](exercises/ex1/README.md) | Explore AAH as your AI command center; find the 3 newly discovered agents | 10 min |
+| 2 | [From Discovery to Inventory](exercises/ex2/README.md) | Open the inbox, review the discovery item and analytics, add the agent to your inventory | 15 min |
+| 3 | [Find Similar Agents & Set a Predecessor](exercises/ex3/README.md) | Use the AI Governance Assistant to find existing agents with similar capabilities; link the phased-out agent as a predecessor | 15 min |
+| 4 | [Complete the Governance Profile](exercises/ex4/README.md) | Review ownership, architecture decision alignment, and EU AI Act classification; update the fact sheet via the AI Governance Assistant | 20 min |
+| 5 | [Verify the Agent](exercises/ex5/README.md) | Mark the agent as verified and approved to run in production | 10 min |
+| 6 | [Test in Joule Studio](exercises/ex6/README.md) | Switch to Joule Studio and confirm the verified agent runs; observe that unverified agents are blocked | 10 min |
 
 **Total exercise time: 90 minutes**
 
@@ -57,3 +55,4 @@ By the end of this workshop you will be able to:
 
 - [SAP AI Agent Hub Documentation](https://help.sap.com)
 - [SAP LeanIX — EA Context for AI Governance](https://www.leanix.net)
+- [EU AI Act — Official Text](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689)
