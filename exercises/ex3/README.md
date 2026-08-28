@@ -1,54 +1,49 @@
-# Exercise 3 — Assign Ownership & Classify Risk
+# Exercise 3 — Find Similar Agents & Set a Predecessor
 
 ## Overview
 
-Assessment surfaces the gaps. Ownership closes them. In this exercise you will assign responsible owners to agents and apply risk classifications — the two actions that move an agent from "shadow AI" to "governed AI."
+Before approving a new agent, a responsible governance team asks: do we already have something that does this? Duplicate agents create unnecessary complexity, split ownership, and increase your risk surface. In this exercise you will use the AI Governance Assistant to search your landscape for similar agents, and then link the right one as a predecessor of the new agent.
 
 **Duration:** 15 minutes
 
-## Background
+## Step 1 — Open the AI Governance Assistant
 
-An unowned agent is an unaccountable agent. Until someone is named responsible for an AI agent's behavior, data usage, and compliance, governance is aspirational rather than enforceable. Risk classification adds a second layer: it signals to the organization how much scrutiny this agent requires and helps prioritize remediation effort.
+1. In AI Agent Hub, open the **AI Governance Assistant** (also referred to as the EA Assistant).
+2. The assistant has access to your full agent inventory, fact sheet data, and architectural context from your connected LeanIX workspace.
 
-## Step 1 — Assign an Owner
+## Step 2 — Query for Similar Agents
 
-1. From the Agent Inventory, open the detail view of an agent you assessed in Exercise 2.
-2. Locate the **Owner** field.
-3. Assign yourself as the owner (use your session credentials).
+Ask the assistant a question in natural language. Try something like:
+
+> *"Are there any other agents in our landscape that support the same business capabilities as [AGENT NAME]? Do any have a similar description or data access pattern?"*
+
+Or more specifically:
+
+> *"Show me agents in the inventory related to [business capability]. Which ones are still active and which are phased out?"*
+
+Review the results. The assistant should surface one or more candidate agents with overlapping scope.
+
+## Step 3 — Review the Candidate Agent
+
+1. From the assistant's response, click through to the fact sheet of the most relevant candidate agent.
+2. Review its details:
+   - **Lifecycle status** — is it active, phase-in, or phase-out?
+   - **Description** — does it overlap significantly with the new agent?
+   - **Owner** — is there an accountable person?
+   - **Verification status** — was it ever formally approved?
+3. In this exercise, the candidate agent has already been marked as **Phase Out** — it is being replaced, and the new agent is its successor.
+
+## Step 4 — Set the Predecessor Relationship
+
+1. Return to the fact sheet of the **new agent** (the one you added to inventory in Exercise 2).
+2. Locate the **Predecessor** field in the fact sheet.
+3. Link the phased-out agent as the predecessor of the new agent.
 4. Save the change.
 
-Repeat for at least one more agent.
-
-> **Note:** In a real-world scenario, ownership would typically be assigned to a business owner or accountable team — not the governance lead. For this workshop, you are playing both roles.
-
-## Step 2 — Set Risk Classification
-
-1. On the same agent detail view, locate the **Risk Classification** field.
-2. Choose the appropriate classification based on your assessment from Exercise 2:
-
-| Classification | When to use |
-|----------------|-------------|
-| **Low** | Minimal data access, low business impact, fully auditable |
-| **Medium** | Moderate sensitivity or criticality; requires periodic review |
-| **High** | Accesses sensitive data or has significant business impact; requires active monitoring |
-| **Critical** | Regulatory exposure, mission-critical operations, or uncontained access scope |
-
-3. Save the classification.
-
-## Step 3 — Document Data Sensitivity
-
-1. If the agent detail view includes a **Data Sensitivity** or **Notes** field, add a short description of what data the agent accesses and why.
-2. This creates an audit trail for future reviews.
-
-## Step 4 — Repeat for Two More Agents
-
-Apply ownership and risk classification to two additional agents. You should now have at least three agents with:
-- An assigned owner
-- A risk classification
-- A saved assessment from Exercise 2
+> **Why this matters:** Setting a predecessor creates a traceable succession chain. Users who relied on the old agent can be pointed to the new one, and auditors can follow the governance history across agent generations.
 
 ## Summary
 
-Your agents are no longer ownerless. In Exercise 4, you will verify the agents that meet your governance criteria — formally approving them to run in your organization.
+You have confirmed that the new agent is a legitimate successor to an existing one — not a duplicate. The predecessor is documented. In Exercise 4, you will complete the governance profile of the new agent before it can be verified.
 
-[Back: Exercise 2](../ex2/README.md) | [Next: Exercise 4 — Verify a Compliant Agent](../ex4/README.md)
+[Back: Exercise 2](../ex2/README.md) | [Next: Exercise 4 — Complete the Governance Profile](../ex4/README.md)

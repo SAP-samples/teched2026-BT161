@@ -1,46 +1,50 @@
-# Exercise 5 — Experience Enforcement in Joule Studio
+# Exercise 5 — Verify the Agent
 
 ## Overview
 
-Governance decisions made in AI Agent Hub have real consequences for users. In this exercise you will switch to your individual Joule Studio instance and observe how verified and unverified agents behave differently at runtime.
+Verification is the governance decision point. When you verify an agent in SAP AI Agent Hub, you are formally approving it to run in your organization's production environment. Unverified agents are blocked from running in Joule Studio.
 
 **Duration:** 10 minutes
 
-## Background
+## Step 1 — Confirm the Governance Checklist
 
-SAP AI Agent Hub and Joule Studio are connected. When you verify an agent in AI Agent Hub, that decision propagates to Joule Studio — the agent becomes available to users. When an agent is unverified or decommissioned, it is blocked from appearing in Joule Studio sessions.
+Before verifying, confirm that the agent's fact sheet is complete. A verification-ready agent should have:
 
-This is what "governance at runtime" means: policy decisions made by governance teams are enforced automatically in the tools employees use every day.
+- [ ] Description — accurate and complete
+- [ ] Owner — assigned
+- [ ] Architecture decision — linked or documented
+- [ ] Data access — documented
+- [ ] EU AI Act classification — set
+- [ ] Predecessor — linked (completed in Exercise 3)
 
-## Step 1 — Open Joule Studio
+If any item is missing, return to Exercise 4 to complete it before proceeding.
 
-1. Switch to the browser tab with your individual **Joule Studio** instance.
-2. Log in if your session has expired.
+## Step 2 — Verify the Agent
 
-## Step 2 — Find Your Verified Agent
+1. On the agent's fact sheet, locate the **Verify** action or the **Verification Status** field.
+2. Review the verification summary — AI Agent Hub surfaces a checklist or completeness indicator at this point.
+3. Click **Verify** (or set status to **Verified**).
+4. Add a short verification note, for example:
 
-1. In Joule Studio, navigate to the agent or tool discovery view.
-2. Search for the agent you verified in Exercise 4 by name.
-3. Confirm it appears and is available for use.
+   > *"Verified following BT161 governance review. Owner confirmed, EU AI Act classification: Limited risk. Predecessor linked. Approved for production use."*
 
-## Step 3 — Attempt to Use an Unverified Agent
+5. Save.
 
-1. Return to AI Agent Hub and note the name of an agent that is still **unverified**.
-2. Switch back to Joule Studio and search for that agent by name.
-3. Observe the result — the agent should be absent, hidden, or shown with a restricted/blocked status.
+The agent's status is now **Verified**.
 
-> **What you are seeing:** Joule Studio respects the governance state set in AI Agent Hub. End users cannot access agents that have not been reviewed and approved by the governance team.
+## Step 3 — Understand What Changes
 
-## Step 4 — Reflect
+When an agent is verified:
 
-Consider the following questions (discuss with your neighbor or note them for the wrap-up):
+- It becomes eligible to appear and run in **Joule Studio** for end users
+- It is counted as a compliant agent in your governance dashboard
+- Future changes to the agent — expanded data access, new permissions — may trigger a re-verification requirement
+- The verification record (who verified it, when, and the note) is retained for audit purposes
 
-- How does this change the role of the AI governance team in your organization?
-- What would a good governance process look like to keep up with the pace of new agent deployment?
-- Who should be notified when a new agent is blocked?
+> **Think about it:** What would happen in your organization if an agent's permissions were expanded after verification? Who should be notified, and how quickly?
 
 ## Summary
 
-You have seen governance enforcement in action. In Exercise 6, you will take the opposite action — decommissioning an agent that should no longer be running.
+The agent is verified and approved for production. In Exercise 6, you will switch to Joule Studio to confirm it runs — and observe that unverified agents are blocked.
 
-[Back: Exercise 4](../ex4/README.md) | [Next: Exercise 6 — Decommission a Non-Compliant Agent](../ex6/README.md)
+[Back: Exercise 4](../ex4/README.md) | [Next: Exercise 6 — Test in Joule Studio](../ex6/README.md)
