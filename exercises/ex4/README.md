@@ -2,71 +2,69 @@
 
 ## Overview
 
-A verified agent needs a complete governance record. In this exercise you will review the new agent's fact sheet, identify the gaps, simulate an owner conversation, and use the AI Governance Assistant to fill in the governance section — including AI risk classification aligned with the EU AI Act.
+A verified agent needs a complete governance record. In this exercise you will review your agent's fact sheet for gaps, fill in the AI governance section, use the AI Governance Assistant to create an Architecture Decision Record, and set the AI risk classification.
 
 **Duration:** 20 minutes
 
-## Step 1 — Review the Fact Sheet
+## Step 1 — Review the Fact Sheet for Gaps
 
-Open the new agent's fact sheet in AI Agent Hub and review the following fields:
+Open your agent's fact sheet in SAP LeanIX and check the following:
 
 | Field | What to check |
 |-------|---------------|
-| **Owner** | Is there a responsible person or team assigned? |
-| **Architecture Decision** | Is this agent aligned to an approved architecture decision? |
+| **Owner** | Is there a responsible person or team assigned? Navigate to the Subscriptions section and confirm or add yourself as Responsible. |
+| **Architecture Decision** | Is this agent aligned to an approved architecture decision? Check the Decisions panel in the right sidebar. |
 | **Description** | Is it accurate and complete enough for a governance review? |
-| **Data Access** | Which systems and data sources does it connect to? |
-| **AI Governance and Adoption** section | Are the AI Agent Type, AI Agent Nature, AI Risk, and Approval State fields completed? |
+| **AI Governance and Adoption** section | Are AI Agent Type, AI Agent Nature, AI Risk, and Approval State filled in? |
 
-Note which fields are empty or incomplete — these are your governance gaps.
+Note which fields are empty — these are your governance gaps.
 
-## Step 2 — Check Architecture Decision Alignment
+## Step 2 — Fill in the AI Governance and Adoption Section
 
-1. Locate the **Architecture Decision** relation on the fact sheet, or check the **Decisions** panel in the right sidebar.
-2. If an architecture decision is linked, review it — does the agent's design and purpose align with the decision? Architecture decisions in AI Agent Hub follow the format *ADR-XX-NNN: [Title]* and include a Context, Decision, and Consequences section.
-3. If no architecture decision is linked, note this as a gap.
+1. In the fact sheet, open the **AI Governance and Adoption** section.
+2. Set the following fields based on what you know about your agent:
 
-> **Tip:** Use the AI Governance Assistant to ask: *"Is there an architecture decision in our workspace that covers agents of this type?"*
+   | Field | Description | Example value |
+   |-------|-------------|---------------|
+   | **AI Agent Type** | How the agent interacts with users | Conversational |
+   | **AI Agent Nature** | How it was built | Custom |
+   | **AI Risk** | Risk level aligned with EU AI Act categories | Limited |
+   | **Approval State** | Governance status — updated automatically on verification | *(leave for Exercise 5)* |
 
-## Step 3 — Simulate the Owner Conversation
+3. Save your changes.
 
-In a real governance process, you would reach out to the agent's owner (or the team that built it) to fill in missing information. For this exercise, your trainer has provided the answers you would have received:
+## Step 3 — Create an Architecture Decision via the AI Governance Assistant
 
-**Simulated owner response:**
-- *"The agent was built by the [TEAM NAME] team to support [USE CASE]."*
-- *"It accesses [SYSTEM/DATA] to perform [ACTION]."*
-- *"We consider it a limited-risk system — it supports human decision-making but does not make autonomous decisions with legal or significant personal impact."*
-- *"There is no architecture decision formally linked, but it follows the standards from [DECISION NAME]."*
+GlobalFlex AG requires that every agent in the inventory is linked to an Architecture Decision Record (ADR) documenting the governance rationale.
 
-Use these answers in the next step.
+1. Navigate to **More** (top header) → **AI Governance Assistant** (also called EA Assistant).
+2. Use the following prompt to generate an ADR for your agent:
 
-## Step 4 — Update the Governance Section via the AI Governance Assistant
+   > *"Create an architecture decision record for [your agent's name] based on the AI governance and adoption insights."*
 
-1. Open the **AI Governance Assistant**.
-2. Ask it to help you update the governance fields based on the owner response. For example:
+3. Review the generated ADR — it will include a Context, Decision, and Consequences section populated from your fact sheet data.
+4. **Save** the ADR. It will be linked to your agent's fact sheet automatically.
+5. Return to the fact sheet and confirm the architecture decision appears in the **Decisions** panel on the right sidebar.
 
-   > *"Based on this description, help me fill in the AI Governance and Adoption section for this agent. The owner confirmed it is a limited-risk system that supports human decision-making in [USE CASE] and accesses [DATA]."*
+> **Why this matters:** An ADR creates an auditable record of *why* this agent was approved — not just *that* it was. Future reviewers (and auditors) can see the reasoning, not just the badge.
 
-3. Review the assistant's suggested updates and apply them to the fact sheet.
+## Step 4 — Set the AI Risk Classification
 
-## Step 5 — Set the AI Risk Classification
-
-1. In the **AI Governance and Adoption** section, locate the **AI Risk** field.
-2. Set the classification based on the agent's characteristics:
+In the **AI Governance and Adoption** section, the **AI Risk** field captures risk classification aligned with the EU AI Act (Regulation 2024/1689):
 
 | AI Risk value | When it applies |
 |---------------|----------------|
-| **High** | Systems with significant impact on individuals or operating in regulated sectors — e.g., HR decisions, credit scoring, critical infrastructure |
-| **Limited** | Systems with transparency obligations — e.g., chatbots, recommendation engines, AI-generated content |
+| **High** | Significant impact on individuals or regulated sectors — e.g., HR decisions, credit scoring, critical infrastructure |
+| **Limited** | Transparency obligations — e.g., chatbots, recommendation engines, AI-generated content |
 
-3. For this agent, select **Limited** based on the owner's description.
-4. Also confirm the **AI Agent Type** (e.g., Conversational) and **AI Agent Nature** (e.g., Pre-Built or Custom) fields are completed.
-5. Save all changes.
+For GlobalFlex AG's procurement assistant scenario, select **Limited** — it supports human decision-making but does not make autonomous decisions with legal or significant personal impact.
 
-> **Note:** The **AI Risk** field in AI Agent Hub captures risk classification aligned with the EU AI Act (Regulation 2024/1689). Confirm the exact field options and any additional EU AI Act-specific fields with the responsible product and compliance team before your production governance rollout.
+Save all changes.
+
+> **Note:** Confirm the exact field options and any additional EU AI Act-specific fields with the responsible product and compliance team before your production governance rollout.
 
 ## Summary
 
-The governance profile is complete: owner confirmed, architecture alignment documented, AI risk classification set. The agent is ready for verification. In Exercise 5, you will formally approve it.
+The governance profile is complete: subscription owner set, AI governance section filled in, ADR created and linked, AI risk classified. The agent is ready for verification. In Exercise 5, you will formally approve it.
 
 [Back: Exercise 3](../ex3/README.md) | [Next: Exercise 5 — Verify the Agent](../ex5/README.md)

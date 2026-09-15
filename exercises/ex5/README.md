@@ -2,42 +2,41 @@
 
 ## Overview
 
-Verification is the governance decision point. When you mark an agent as verified in SAP AI Agent Hub, you are formally approving it to run in your organization's production environment. Unverified agents are blocked from running in Joule Studio.
+Verification is the governance decision point. When you mark an agent as verified in SAP LeanIX, you are formally approving it to run in your organization's production environment. Unverified agents cannot run in Joule Work.
 
 **Duration:** 10 minutes
 
 ## Step 1 — Confirm the Governance Checklist
 
-Before verifying, confirm that the agent's fact sheet is complete. A verification-ready agent should have:
+Before verifying, confirm that the agent's fact sheet is complete:
 
 - [ ] Description — accurate and complete
-- [ ] Owner — assigned
-- [ ] Architecture decision — linked or documented
-- [ ] Data access — documented
-- [ ] AI Risk — classified (completed in Exercise 4)
+- [ ] Owner — assigned as Responsible subscriber
+- [ ] Architecture Decision — linked (created in Exercise 4)
+- [ ] AI Governance and Adoption section — AI Agent Type, AI Agent Nature, and AI Risk all set
 - [ ] Predecessor — linked (completed in Exercise 3)
 
-If any item is missing, return to the relevant exercise to complete it before proceeding.
+If any item is missing, return to the relevant exercise to complete it.
 
 ## Step 2 — Mark as Verified
 
-1. On the agent's fact sheet, locate the **Mark as Verified** button in the fact sheet header.
-2. Review the governance record one final time — confirm all fields are in order.
-3. Click **Mark as Verified**.
+1. On the agent's fact sheet, locate the **Verification Badge** at the top of the fact sheet header.
+2. Click the **Verification Badge**.
+3. In the popup, select **Mark as Verified**.
 4. Add a short verification note, for example:
 
-   > *"Verified following BT161 governance review. Owner confirmed. AI Risk: Limited. Predecessor linked. Approved for production use."*
+   > *"Verified following BT161 governance review. Owner confirmed. AI Risk: Limited. ADR created. Predecessor linked. Approved for production use."*
 
-5. Save.
+5. Confirm.
 
-The agent now shows the **Agent Verified** badge and its **Approval State** is updated accordingly.
+The badge updates to **Agent Verified** and the **Approval State** is updated accordingly.
 
 ## Step 3 — Understand What Changes
 
 When an agent is verified:
 
-- It becomes eligible to appear and run in **Joule Studio** for end users
-- It is counted as a compliant agent in your governance dashboard and radar report
+- It becomes eligible to appear and run in **Joule Work** for end users
+- It is counted as a compliant agent in your governance dashboard
 - Future changes to the agent — expanded data access, new permissions — may trigger a re-verification requirement
 - The verification record (who verified it, when, and the note) is retained for audit purposes
 
@@ -45,6 +44,6 @@ When an agent is verified:
 
 ## Summary
 
-The agent is verified and approved for production. In Exercise 6, you will switch to Joule Studio to confirm it runs — and observe that unverified agents are blocked.
+The agent is verified and approved for production. In Exercise 6, you will switch to Joule Work to confirm it runs — and see that the governance decision you just made is enforced automatically.
 
-[Back: Exercise 4](../ex4/README.md) | [Next: Exercise 6 — Test in Joule Studio](../ex6/README.md)
+[Back: Exercise 4](../ex4/README.md) | [Next: Exercise 6 — Test in Joule Work](../ex6/README.md)
