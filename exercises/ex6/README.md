@@ -1,46 +1,52 @@
-# Exercise 6 — Test in Joule Work
+# Exercise 6 — Verify the Agent
 
 ## Overview
 
-Governance decisions made in SAP LeanIX are enforced at runtime in Joule Work. In this final exercise you will switch to Joule Work, confirm that your verified agent is available and runs, and observe that an unverified agent is blocked.
+Verification is the governance decision point. When you mark an agent as verified in SAP LeanIX, you are formally approving it for production use in your organization.
 
-**Duration:** 5 minutes
+**Duration:** 10 minutes
 
-## Background
+> **Before you start:** Confirm with your trainer that the survey responses from Exercise 5 have been submitted. Your fact sheet must show values for AI Agent Type, AI Risk, and AI Model before you proceed.
 
-SAP LeanIX and Joule Work are connected. Verification is not just a label — it is an enforcement signal. Only agents that have been formally reviewed and approved in AI Agent Hub are allowed to run in Joule Work. This is what "AI governance at runtime" means: policy decisions made by the EA team are enforced automatically in the tool employees use every day.
+## Step 1 — Confirm the Governance Checklist
 
-## Step 1 — Switch to Joule Work
+Open your agent's fact sheet and verify that every item below is complete:
 
-1. Switch to the **Joule Work** browser tab.
-2. Log in again if your session has expired.
+- [ ] **Description** — generated and reviewed in Exercise 4
+- [ ] **Owner** — you are assigned as Responsible subscriber (Exercise 4)
+- [ ] **Architecture Decision** — linked to the ADR created in Exercise 4
+- [ ] **Predecessor** — linked to the phased-out agent (Exercise 3)
+- [ ] **AI Agent Type** — received via survey (Exercise 5)
+- [ ] **AI Risk** — received via survey (Exercise 5)
+- [ ] **AI Model** — received via survey (Exercise 5)
 
-## Step 2 — Find and Run Your Verified Agent
+If any item is still missing, address it before clicking Verify.
 
-1. In Joule Work, navigate to the agent or assistant discovery view.
-2. Search for the agent you verified in Exercise 5 — use your 3-digit participant code to find it quickly.
-3. Confirm it appears and is available.
-4. Invoke the agent with the test prompt provided by your trainer.
-5. Confirm you receive a response — your agent is running in production.
+## Step 2 — Mark as Verified
 
-## Step 3 — Attempt to Use an Unverified Agent
+1. On the agent's fact sheet, locate the **Verification Badge** at the top of the fact sheet header.
+2. Click the **Verification Badge**.
+3. In the popup, select **Mark as Verified**.
+4. Add a short verification note, for example:
 
-1. Return to SAP LeanIX and note the name of one of the other agents in the inbox — one that was **not** verified in this workshop.
-2. Switch back to Joule Work and search for that agent by name.
-3. Observe the result: the agent should be absent, hidden, or shown with a blocked/restricted status.
+   > *"Verified following BT161 governance review. Owner confirmed. AI Risk assessed. ADR created. Survey response received from business owner. Approved."*
 
-> **What you are seeing:** Joule Work enforces the governance state set in SAP LeanIX. End users cannot access agents that have not been reviewed and approved. The decision you made as an EA team member at GlobalFlex AG is enforced automatically — without any manual intervention in Joule Work itself.
+5. Confirm.
 
-## Step 4 — Reflect
+The badge updates to **Agent Verified** and the **Approval State** is updated accordingly.
 
-Consider the following before the session wrap-up:
+## Step 3 — Understand What Changes
 
-- How does this change the role of the EA or AI governance team in your organization?
-- What process would you put in place to keep up with the pace of new agent discovery?
-- Who in your organization should receive a weekly AI governance posture report?
+When an agent is verified:
+
+- It is counted as a compliant agent in your governance dashboard
+- Future changes to the agent — expanded data access, new permissions — may trigger a re-verification requirement
+- The verification record (who verified it, when, and the note) is retained for audit purposes
+
+> **Think about it:** The survey you sent in Exercise 5 created an auditable trail — you can show when data was requested and when it was provided. How would you use that trail if an agent was later found to be non-compliant?
 
 ## Summary
 
-You have completed the full governance lifecycle for a newly discovered AI agent — from deploying it in Joule Work, through discovery, assessment, and verification in SAP LeanIX, to confirming it runs in production. This is what end-to-end AI governance looks like in practice.
+You have completed the full AI governance lifecycle for a newly discovered agent: discovery, inventory, duplicate check, fact sheet preparation, data collection from the business owner, and formal verification. This is what structured AI governance looks like in practice at GlobalFlex AG.
 
 [Back: Exercise 5](../ex5/README.md) | [Return to Overview](../../README.md)
