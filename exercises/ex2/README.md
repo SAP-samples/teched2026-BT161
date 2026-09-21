@@ -2,43 +2,42 @@
 
 ## Overview
 
-Your agent is now live in Joule Work. In this exercise you will open the AI Agent Discovery Inbox and find it — alongside standard SAP agents that were discovered automatically from GlobalFlex AG's SAP system. You will review the discovery details and add your agent to the governed inventory.
+Your agent is waiting in the Discovery Inbox. In this exercise you will review the discovery details, check the usage analytics, and add your agent to the governed inventory.
 
 **Duration:** 15 minutes
 
 ## Background
 
-The AI Agent Discovery Inbox is where AI Agent Hub surfaces everything it has found. Two types of agents appear here:
-- **Standard SAP agents** — discovered automatically from the connected SAP system; these often arrive already linked to relevant IT components and business capabilities
-- **Custom agents** — deployed by teams in Joule Work; these arrive with less context attached and typically require more governance work
+The AI Agent Discovery Inbox is where AI Agent Hub surfaces everything it has found. Agents arrive here from connected systems — whether they are standard SAP agents discovered automatically, or agents deployed by teams in your organization. Both go through the same review-and-approve process.
 
-Both types go through the same review-and-approve process. Your agent is the custom one — the one GlobalFlex AG's EA team (you) has no prior record of.
+Your agent was pre-loaded for this workshop to simulate a real discovery event: the EA team at GlobalFlex AG has no prior record of it, and it is your job to evaluate whether it belongs in the governed inventory.
 
 ## Step 1 — Open the AI Agent Discovery Inbox
 
 1. In SAP LeanIX, navigate to:
    **Inventory → Inventory Tools *(top right)* → Discovery Inbox → AI Agent Discovery**
 2. Apply the filter **Status: Action Needed** to focus on unreviewed agents.
-3. You should see a mix of standard SAP agents and the custom agent you deployed in Exercise 1.
+3. Locate your agent using your participant number.
 
-## Step 2 — Identify Your Agent
-
-1. Locate your agent by name — it includes your 3-digit participant code.
-2. Open it. Notice the difference in the detail panel compared to a standard SAP agent:
-   - Standard agents often have **Discovered Fact Sheets** already suggested (linked IT components, business capabilities)
-   - Your custom agent may have fewer automatic suggestions — this reflects real-world governance: custom agents require more manual investigation
-
-## Step 3 — Review the Discovery Details
+## Step 2 — Review the Discovery Details
 
 In the detail panel for your agent, review:
 
 - **Description** — what the agent claims to do
 - **Creation Timestamp** — when it first appeared in the landscape
-- **Integration source** — confirms this came from Joule Work
 - **Discovered Fact Sheets** — fact sheets AI Agent Hub has automatically suggested as related
 - **Additional Suggestions** — other fact sheets the system thinks may be relevant
 
 Read through the details. Treat yourself as an EA team member seeing this agent for the first time.
+
+## Step 3 — Compare with a Standard SAP Agent
+
+Before adding your agent, briefly compare it with a standard SAP agent in the same inbox:
+
+- Standard SAP agents often have **Discovered Fact Sheets** already suggested (linked IT components, business capabilities)
+- Your agent may have fewer automatic suggestions — this reflects real-world governance: agents discovered with less metadata require more manual investigation
+
+This difference in discovery richness is normal and expected.
 
 ## Step 4 — Check the Analytics
 

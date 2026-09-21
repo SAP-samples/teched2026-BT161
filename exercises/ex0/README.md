@@ -2,7 +2,7 @@
 
 ## Overview
 
-Before the exercises begin, log in to both systems and take a few minutes to orient yourself.
+Before the exercises begin, log in to SAP LeanIX and take a few minutes to orient yourself in the AI Agent Hub interface.
 
 **Duration:** 10 minutes
 
@@ -11,7 +11,6 @@ Before the exercises begin, log in to both systems and take a few minutes to ori
 | System | Purpose |
 |--------|---------|
 | SAP LeanIX (shared workspace) | Your command center for AI governance — AI Agent Hub lives here |
-| Joule Work (web browser) | Where custom AI agents are built and deployed — you will use the web version, no desktop install needed |
 
 ## Step 1 — Log In to SAP LeanIX
 
@@ -19,12 +18,9 @@ Before the exercises begin, log in to both systems and take a few minutes to ori
 2. Sign in with the shared workspace credentials provided.
 3. You should land on the **SAP LeanIX home screen**. Look for the **AI Agent Hub** section — this is where all the exercises take place.
 
-## Step 2 — Log In to Joule Work
+## Step 2 — Locate Your Participant Number
 
-1. Open a new browser tab and navigate to the **Joule Work URL** provided on your session card.
-2. Sign in with your **SAP Universal ID**.
-3. Confirm the Joule Work interface loads. You will use the web version throughout — no desktop app is required.
-4. Locate the **develop** or **build** section — you will deploy an agent here in Exercise 1.
+Your session card includes a **participant number** (for example, P07). You will use this number throughout the workshop to identify your personal agent in the shared workspace — every participant has a uniquely named agent pre-loaded in the Discovery Inbox.
 
 ## Step 3 — Quick Orientation in SAP LeanIX
 
