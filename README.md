@@ -12,16 +12,15 @@ Working inside **SAP LeanIX**, you will use the AI Agent Hub capabilities to dis
 
 The IT department recently received an audit finding: **no central inventory of AI systems exists**, and several business units are running AI agents that touch sensitive data without formal risk assessment. The CIO has tasked the EA team to establish AI governance within 90 days.
 
-> You are a member of that EA team. You start your week by opening SAP LeanIX — your command center for everything AI in the organization. New agents have been discovered. One of them has never been reviewed. You need to understand what it does, who owns it, whether it meets your governance requirements, and ultimately decide whether to approve it.
+> You are a member of that EA team — part of the AI Governance Center of Excellence that GlobalFlex AG has just established. You start your week by opening SAP LeanIX — your command center for everything AI in the organization. New agents have been discovered. One of them has never been reviewed. You need to understand what it does, who owns it, whether it meets your governance requirements, and ultimately decide whether to approve it.
 
 ## What You Will Learn
 
 SAP LeanIX's AI Agent Hub gives you a single place to view and govern all AI agents, MCP servers, and LLMs deployed across your landscape — SAP-native, custom-built, and third-party. In this workshop you will experience the full governance lifecycle for a newly discovered agent:
 
+- Create an **Architecture Decision Record** to document a governance policy your committee just adopted
 - Use the **dashboard and inbox** to spot and triage new discoveries
-- Use the **AI Governance Assistant** to find similar agents already in your landscape
-- Manage **agent succession** by linking a phased-out agent as a predecessor
-- Complete a **governance profile**: assign ownership, generate a description with LeanIX AI, and create an architecture decision record
+- Complete a **governance profile**: assign yourself as observer, and link the agent to the architecture decision
 - Send a **survey** to the agent's business owner to collect missing fields — and wait for the response before verifying
 - **Verify** the agent once the full governance record is in place
 
@@ -30,14 +29,13 @@ SAP LeanIX's AI Agent Hub gives you a single place to view and govern all AI age
 | # | Exercise | Description | Duration |
 |---|----------|-------------|----------|
 | GS | [Getting Started](exercises/ex0/README.md) | Log in to SAP LeanIX; orient in the AI Agent Hub interface | 10 min |
-| 1 | [The Governance Dashboard](exercises/ex1/README.md) | Explore AI Agent Hub as your command center; find your pre-named agent in the Discovery Inbox | 15 min |
+| 1 | [The Governance Dashboard](exercises/ex1/README.md) | Create an architecture decision; explore the dashboard and inventory | 20 min |
 | 2 | [From Discovery to Inventory](exercises/ex2/README.md) | Review your agent's discovery details and analytics; add it to the governed inventory | 15 min |
-| 3 | [Find Similar Agents & Set a Predecessor](exercises/ex3/README.md) | Use the AI Governance Assistant to find existing agents with similar capabilities; link the phased-out agent as a predecessor | 15 min |
-| 4 | [Prepare the Fact Sheet](exercises/ex4/README.md) | Assign ownership, generate a description with LeanIX AI, and create an architecture decision record | 15 min |
-| 5 | [Collect Missing Information via Survey](exercises/ex5/README.md) | Send a survey to the agent's business owner for AI Type, AI Risk, AI Model, and Owner; wait for the response | 15 min |
-| 6 | [Verify the Agent](exercises/ex6/README.md) | Confirm the full governance checklist is complete and mark the agent as verified | 10 min |
+| 3 | [Complete the Governance Profile](exercises/ex3/README.md) | Assign yourself as observer; link the architecture decision; note what goes to the survey | 15 min |
+| 4 | [Collect Missing Information via Survey](exercises/ex4/README.md) | Send a survey to the agent's business owner for AI Type, AI Risk, AI Model, and Owner; wait for the response | 15 min |
+| 5 | [Verify the Agent](exercises/ex5/README.md) | Confirm the full governance checklist is complete and mark the agent as verified | 15 min |
 
-**Total exercise time: 95 minutes** *(facilitators: exercise 3 can be shortened if the group runs behind)*
+**Total exercise time: 90 minutes**
 
 ## Prerequisites
 

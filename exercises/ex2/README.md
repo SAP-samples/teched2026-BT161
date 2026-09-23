@@ -2,13 +2,13 @@
 
 ## Overview
 
-Your agent is waiting in the Discovery Inbox. In this exercise you will review the discovery details, check the usage analytics, and add your agent to the governed inventory.
+Your agent is waiting in the Discovery Inbox. In this exercise you will open it, review the discovery details, check the usage analytics, and add your agent to the governed inventory.
 
 **Duration:** 15 minutes
 
 ## Background
 
-The AI Agent Discovery Inbox is where AI Agent Hub surfaces everything it has found. Agents arrive here from connected systems — whether they are standard SAP agents discovered automatically, or agents deployed by teams in your organization. Both go through the same review-and-approve process.
+The AI Agent Discovery Inbox is where AI Agent Hub surfaces everything it has found. Agents arrive here from connected systems: standard SAP agents discovered automatically, and custom agents deployed by teams in your organization. Both go through the same review-and-approve process.
 
 Your agent was pre-loaded for this workshop to simulate a real discovery event: the EA team at GlobalFlex AG has no prior record of it, and it is your job to evaluate whether it belongs in the governed inventory.
 
@@ -17,44 +17,51 @@ Your agent was pre-loaded for this workshop to simulate a real discovery event: 
 1. In SAP LeanIX, navigate to:
    **Inventory → Inventory Tools *(top right)* → Discovery Inbox → AI Agent Discovery**
 2. Apply the filter **Status: Action Needed** to focus on unreviewed agents.
-3. Locate your agent using your participant number.
+3. Apply the filter **Build Type: Custom** to narrow the list to agents built by teams in your organization.
+4. Search for your participant number (e.g., *P07*) to find your agent.
 
-## Step 2 — Review the Discovery Details
+## Step 2 — Review the Overview
 
-In the detail panel for your agent, review:
+Open your discovery item. The **Overview** panel shows what AI Agent Hub has automatically collected:
 
-- **Description** — what the agent claims to do
-- **Creation Timestamp** — when it first appeared in the landscape
-- **Discovered Fact Sheets** — fact sheets AI Agent Hub has automatically suggested as related
-- **Additional Suggestions** — other fact sheets the system thinks may be relevant
+| Field | What you are seeing |
+|-------|---------------------|
+| **Description** | What the agent claims to do — sourced from the system where it was discovered |
+| **Creation Timestamp** | When this agent first appeared in the landscape |
+| **Build Type** | Custom — built and deployed by a team in your organization |
+| **Discovered Fact Sheets** | Automatically suggested related fact sheets — including the **IT component** (Joule Studio runtime) and **provider** (SAP), as well as any **MCP servers** the agent uses |
+| **Additional Suggestions** | Other related fact sheets the system thinks may be relevant — often includes **business capabilities** |
 
 Read through the details. Treat yourself as an EA team member seeing this agent for the first time.
 
-## Step 3 — Compare with a Standard SAP Agent
+## Step 3 — Check the Details Page
 
-Before adding your agent, briefly compare it with a standard SAP agent in the same inbox:
+Click **Show all details** to open the full discovery record. Here you will find:
 
-- Standard SAP agents often have **Discovered Fact Sheets** already suggested (linked IT components, business capabilities)
-- Your agent may have fewer automatic suggestions — this reflects real-world governance: agents discovered with less metadata require more manual investigation
+- **Region** — where the agent is deployed
+- **Environment** — whether this agent is running in a **productive** environment or a development/test environment
 
-This difference in discovery richness is normal and expected.
+> **Why this matters:** A productive environment means real users are already interacting with this agent — potentially with access to live S/4HANA data — before any governance review has taken place.
 
 ## Step 4 — Check the Analytics
 
-1. From the discovery item, open the agent's fact sheet and navigate to the **Analytics** tab.
-2. Review the usage data AI Agent Hub has collected:
-   - **Total Sessions**, **First Active / Last Active**, **Average Tokens per Session**
+1. Open the **Analytics** tab on the discovery item.
+2. Review the usage data that AI Agent Hub has collected from **SAP Cloud ALM**:
+   - Total agent sessions
+   - Light quality indicators
 
-> **Think about it:** Even a brand-new agent can start accumulating sessions before governance catches up. In a real scenario — what process would you put in place to close that gap?
+> **Think about it:** This agent was discovered *from the system* — not reported by the team that built it. In a real scenario, how long might an agent run before the EA team notices it?
 
 ## Step 5 — Add to Inventory
 
 1. Return to the discovery item and click **Add to Inventory**.
 2. The agent is now part of the governed inventory — status changes to **Unverified**.
-3. Verify that a new AI Agent fact sheet has been created, including its relationship to any suggested IT components.
+3. Open the newly created fact sheet by hovering over the fact sheet link and clicking through.
+
+> **Note:** The person who deployed this agent is automatically assigned as **Responsible** subscriber — this is pulled from the deployment metadata. The EA team's role here is Observer, which you will set in Exercise 3.
 
 ## Summary
 
-Your agent is now in the inventory alongside the standard SAP agents. In Exercise 3, you will use the AI Governance Assistant to find out whether GlobalFlex AG already has something similar — and document the succession relationship.
+Your agent is now in the inventory with a governance record started. In Exercise 3, you will complete the parts of the governance profile the EA team can fill in independently.
 
-[Back: Exercise 1](../ex1/README.md) | [Next: Exercise 3 — Find Similar Agents & Set a Predecessor](../ex3/README.md)
+[Back: Exercise 1](../ex1/README.md) | [Next: Exercise 3 — Complete the Governance Profile](../ex3/README.md)

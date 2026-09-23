@@ -1,70 +1,62 @@
-# Exercise 5 — Collect Missing Information via Survey
+# Exercise 5 — Verify the Agent
 
 ## Overview
 
-Not every governance gap can be filled by the EA team alone. Fields like AI Agent Type, AI Risk, AI Model, and the business-side Owner require input from the team that built or runs the agent. Chasing this information over email is slow and leaves no audit trail. LeanIX surveys let you request exactly the fields you need from exactly the right person — and the answers flow directly into the fact sheet.
-
-In this exercise you will create a survey targeting the open fields on your agent's fact sheet and send it to the agent's business owner. Your trainer plays the role of the business owner and will answer the survey during the session. Only once the survey response arrives will your fact sheet be complete enough to verify.
+Verification is the governance decision point. When you mark an agent as verified in SAP LeanIX, you are formally approving it for production use in your organization.
 
 **Duration:** 15 minutes
 
-## Step 1 — Identify the Fields to Survey
+> **Before you start:** Confirm with your trainer that the survey responses from Exercise 4 have been submitted. Your fact sheet must show values for AI Agent Type, AI Risk, and AI Model before you proceed.
 
-Open your agent's fact sheet and confirm the following fields are still empty (they should be, based on Exercise 4):
+## Step 1 — Confirm the Governance Checklist
 
-| Field | Why it needs the business owner |
-|---|---|
-| AI Agent Type | Only the team running the agent knows how it is invoked — conversational, automated, embedded, etc. |
-| AI Risk | The EU AI Act risk category requires the owner to assess impact on their domain. |
-| AI Model | Which underlying LLM or foundation model is used — often not visible to the EA team. |
-| Business Owner | The person or team accountable for the agent on the business side. |
+Open your agent's fact sheet and verify that every item below is complete:
 
-## Step 2 — Create the Survey
+- [ ] **Description** — confirmed in Exercise 3
+- [ ] **Responsible** — auto-assigned from deployment (Exercise 2); you are Observer (Exercise 3)
+- [ ] **Architecture Decision** — linked to the ADR created in Exercise 1 and linked in Exercise 3
+- [ ] **AI Agent Type** — received via survey (Exercise 4)
+- [ ] **AI Risk** — received via survey (Exercise 4)
+- [ ] **AI Model** — received via survey (Exercise 4)
 
-1. Open your agent's fact sheet.
-2. In the fact sheet header, open the **More** menu.
-3. Select **Create Survey** (or **Request Update**, depending on your workspace configuration).
-4. A survey composer opens. You will see the available fields for this fact sheet type.
+If any item is still missing, address it before clicking Verify.
 
-## Step 3 — Configure the Survey
+## Step 2 — Mark as Verified
 
-1. **Select the fields** to include:
-   - AI Agent Type
-   - AI Risk
-   - AI Model
-   - Responsible subscriber / Business Owner
+1. On the agent's fact sheet, locate the **Verification Badge** at the top of the fact sheet header.
+2. Click the **Verification Badge**.
+3. In the popup, select **Mark as Verified**.
+4. Add a short verification note, for example:
 
-2. Add a **survey title**, for example:
-   > *"AI Governance Data Request — [Your Agent Name]"*
+   > *"Verified following BT161 governance review. Observer assigned. AI Risk assessed. ADR linked. Survey response received from business owner. Approved for production use."*
 
-3. Add a short **message to the respondent**, for example:
-   > *"As part of GlobalFlex AG's AI governance process, we need your input on the agent you are responsible for. Please complete the fields below so we can complete the governance review."*
+5. Confirm.
 
-4. Set the **respondent** to the dummy user provided by your trainer — the email address is on your session card.
+The badge updates to **Agent Verified**.
 
-## Step 4 — Send the Survey
+## Step 3 — Set the Approval State
 
-1. Review the survey preview.
-2. Click **Send**.
-3. The respondent receives an email with a direct link to fill in the fields. The answers write back into the fact sheet automatically when submitted.
+The **Verification Badge** and the **Approval State** are two separate governance signals — understanding the difference matters:
 
-> **What happens next:** Your trainer, acting as the agent's business owner, will fill in the survey response during the session and submit it. Watch your fact sheet — the fields will update in real time once the response comes in.
+- **Verification Badge** (*Mark as Verified / Agent Verified*) — specific to AI agents, MCP servers, and LLMs. It means this agent has been reviewed and is approved to run productively. This is the AI governance signal.
+- **Approval State** (*Quality Seal*) — applies to all fact sheets in SAP LeanIX, not just agents. It signals that the data on this fact sheet has been reviewed and meets your organization's data quality standard.
 
-## Step 5 — Apply the Survey Response
+Both are meaningful — and both should be set.
 
-When you see the fields update on your fact sheet (your trainer will signal when responses have been submitted):
+1. Locate the **Approval State** field on the fact sheet header (also called the Quality Seal).
+2. Set it to **Approved**.
 
-1. Refresh the fact sheet if needed.
-2. Review the values that arrived from the survey:
-   - **AI Agent Type** — does the classification match what you expected based on the agent's description?
-   - **AI Risk** — is the EU AI Act risk level appropriate for what this agent does?
-   - **AI Model** — note the underlying model. Does it affect your governance decision?
-3. If any value looks incorrect, discuss it with your group before proceeding to verification.
+## Step 4 — Navigate Back to the Dashboard
+
+1. Return to the **AI Agent Hub Dashboard**.
+2. Confirm that your agent is now counted in the **Verified** agents total.
+
+> **What you are seeing:** The governance decision you just made is reflected immediately in the organization's AI posture metrics. This is how a governance team demonstrates progress — not just in individual fact sheets, but at the portfolio level.
+
+> **Note on the AI Governance checklist:** Workspace administrators can configure a custom governance checklist in **Administration → AI Governance**. In this shared workshop workspace you can view it but not modify it. In your own organization, you would use this to define exactly which fields must be completed before an agent can be verified.
 
 ## Summary
 
-The fact sheet now has all required fields populated — partly by you (description, ADR, owner subscription) and partly by the business owner via survey. This combination of self-service and structured data collection is how AI governance scales across an organization without becoming a bottleneck.
+You have completed the full AI governance lifecycle for a newly discovered agent: discovery, inventory, governance profile, data collection from the business owner, and formal verification. The dashboard now reflects the updated posture. This is what structured AI governance looks like in practice at GlobalFlex AG.
 
-Move on to Exercise 6 when your trainer confirms that survey responses have been submitted for all groups.
-
-[Back: Exercise 4](../ex4/README.md) | [Next: Exercise 6 — Verify the Agent](../ex6/README.md)
+[Back: Exercise 4](../ex4/README.md) | [Return to Overview](../../README.md)

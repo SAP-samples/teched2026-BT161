@@ -1,51 +1,56 @@
-# Exercise 3 — Find Similar Agents & Set a Predecessor
+# Exercise 3 — Complete the Governance Profile
 
 ## Overview
 
-Before approving a new agent, a responsible governance team asks: do we already have something that does this? Duplicate agents create unnecessary complexity, split ownership, and increase your risk surface. In this exercise you will use the AI Governance Assistant to search your landscape for similar agents, and then link the right one as a predecessor of the new agent.
+Your agent is now in the inventory but its governance record is incomplete. In this exercise you will fill in what the EA team can determine independently — assign yourself as an observer, and link the agent to the Architecture Decision Record you created in Exercise 1. Fields that only the agent's business owner can answer (AI Agent Type, AI Risk, AI Model) will be collected in the next exercise via a survey.
 
 **Duration:** 15 minutes
 
-## Step 1 — Open the AI Governance Assistant
+## Step 1 — Review the Fact Sheet for Gaps
 
-1. In AI Agent Hub, open the **AI Governance Assistant**.
-2. The assistant has access to your full agent inventory, fact sheet data, and architectural context from your connected LeanIX workspace.
+Open your agent's fact sheet in SAP LeanIX and check the following:
 
-## Step 2 — Query for Similar Agents
+| Field | What to check |
+|-------|---------------|
+| **Description** | Should be pre-filled from the discovery data. Confirm it accurately describes what this agent does. |
+| **Responsible subscriber** | Auto-assigned to the person who deployed this agent in Joule Studio. Check who is listed. |
+| **Architecture Decision** | Not yet linked. You will link it in Step 3. |
+| **AI Agent Type** | Empty — requires the agent's business owner. Goes to survey in Exercise 4. |
+| **AI Risk** | Empty — requires the agent's business owner. Goes to survey in Exercise 4. |
+| **AI Model** | Empty — requires the agent's business owner. Goes to survey in Exercise 4. |
 
-Ask the assistant a question in natural language. Try something like:
+## Step 2 — Add Yourself as Observer
 
-> *"Are there any other agents in our landscape that support the same business capabilities as [AGENT NAME]? Do any have a similar description or data access pattern?"*
+The **Responsible** subscriber is already set to the person who deployed the agent. As the EA team member reviewing this agent, your role is **Observer**.
 
-Or more specifically:
+1. Navigate to the **Subscriptions** section of the fact sheet.
+2. Add yourself as **Observer** subscriber.
 
-> *"Show me agents in the inventory related to [business capability]. Which ones are still active and which are phased out?"*
+> **Why Observer, not Responsible?** The Responsible role belongs to the person accountable for the agent — the business owner or deploying team. The EA team oversees governance but does not own the agent itself. Observer means you will be notified of changes without taking on operational accountability.
 
-Review the results. The assistant should surface one or more candidate agents with overlapping scope.
+## Step 3 — Validate the Description
 
-## Step 3 — Review the Candidate Agent
+The agent description was pulled in automatically during discovery. Before proceeding:
 
-1. From the assistant's response, click through to the fact sheet of the most relevant candidate agent.
-2. Review its details — including the **Analytics** tab to understand its usage history:
-   - **Total Sessions**, **First Active**, **Last Active**, **Average Tokens per Session** — how long has it been in use and how heavily?
-   - **Lifecycle status** — is it Active, Phase In, or Phase Out?
-   - **Description** — does it overlap significantly with the new agent?
-   - **Owner** — is there an accountable person?
-   - **Approval State** — was it ever formally verified?
-3. Also check the **Decisions** panel in the right sidebar — it shows architecture decisions already linked to this agent.
-4. In this exercise, the candidate agent has already been marked as **Phase Out** — it is being replaced, and the new agent is its successor.
+1. Read the description carefully.
+2. Confirm it accurately reflects what this agent does at GlobalFlex AG — not just a generic template.
+3. If the description is thin or inaccurate, you can use LeanIX's built-in AI to improve it: hover over the Description field in edit mode and look for the **AI-generate** option (sparkle icon).
 
-## Step 4 — Set the Predecessor Relationship
+## Step 4 — Link the Architecture Decision
 
-1. Return to the fact sheet of the **new agent** (the one you added to inventory in Exercise 2).
-2. Locate the **Predecessor** field in the fact sheet.
-3. Link the phased-out agent as the predecessor of the new agent.
-4. Save the change.
+Your agent is subject to the policy you documented in Exercise 1. Now link them.
 
-> **Why this matters:** Setting a predecessor creates a traceable succession chain. Users who relied on the old agent can be pointed to the new one, and auditors can follow the governance history across agent generations.
+1. Navigate to **More** (top header) → **EA Assistant** (or open the ADR directly from **Architecture Decisions**).
+2. Find the ADR you created in Exercise 1 — search for your participant number.
+3. Open the ADR and navigate to the **Affected Fact Sheets** section.
+4. Add your agent's fact sheet to the ADR.
+
+> **Why from the ADR side?** Architecture decisions are linked by adding fact sheets to the ADR — not by editing individual fact sheets. This keeps the decision as the single source of truth: all agents subject to a policy are listed in one place.
+
+5. Return to your agent's fact sheet and confirm the ADR now appears in the **Decisions** panel in the right sidebar.
 
 ## Summary
 
-You have confirmed that the new agent is a legitimate successor to an existing one — not a duplicate. The predecessor is documented. In Exercise 4, you will complete the governance profile of the new agent before it can be verified.
+The EA team's portion of the governance record is now complete: you are assigned as Observer, the description is confirmed, and the ADR has been linked. The remaining fields — AI Agent Type, AI Risk, and AI Model — require input from the agent's business owner. In Exercise 4, you will send them a survey to collect that information.
 
-[Back: Exercise 2](../ex2/README.md) | [Next: Exercise 4 — Complete the Governance Profile](../ex4/README.md)
+[Back: Exercise 2](../ex2/README.md) | [Next: Exercise 4 — Collect Missing Information via Survey](../ex4/README.md)

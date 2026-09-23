@@ -1,59 +1,71 @@
-# Exercise 4 — Prepare the Fact Sheet
+# Exercise 4 — Collect Missing Information via Survey
 
 ## Overview
 
-A complete governance record is what makes verification meaningful. In this exercise you will fill in what the EA team can determine independently — assign ownership, use LeanIX AI to draft the agent description, and create an Architecture Decision Record. Fields that only the agent's business owner can answer (AI Agent Type, AI Risk, AI Model) will be collected in the next exercise via a survey.
+Not every governance gap can be filled by the EA team alone. Fields like AI Agent Type, AI Risk, AI Model, and the business-side Owner require input from the team that built or runs the agent. Chasing this information over email is slow and leaves no audit trail. LeanIX surveys let you request exactly the fields you need from exactly the right person — and the answers flow directly into the fact sheet.
+
+In this exercise you will use the **Next Generation Survey** feature to create a targeted survey with AI, send it to the agent's business owner, and then watch the fact sheet update — and the change log record — as the responses arrive.
 
 **Duration:** 15 minutes
 
-## Step 1 — Review the Fact Sheet for Gaps
+## Step 1 — Identify the Fields to Survey
 
-Open your agent's fact sheet in SAP LeanIX and check the following:
+Open your agent's fact sheet and confirm the following fields are still empty (they should be, based on Exercise 3):
 
-| Field | What to check |
-|-------|---------------|
-| **Description** | Is it accurate and complete enough for a governance review? If thin or missing — generate it in the next step. |
-| **Owner** | Is there a responsible person or team assigned? Navigate to the Subscriptions section. |
-| **Architecture Decision** | Is this agent aligned to an approved architecture decision? Check the Decisions panel in the right sidebar. |
-| **AI Agent Type** | Is this field set? If not — this goes to the survey in Exercise 5. |
-| **AI Risk** | Is a risk level assigned? If not — this also goes to the survey. |
-| **AI Model** | Is the underlying model documented? If not — survey. |
+| Field | Why it needs the business owner |
+|---|---|
+| AI Agent Type | Only the team running the agent knows how it is invoked — conversational, automated, embedded, etc. |
+| AI Risk | The EU AI Act risk category requires the owner to assess impact on their domain. |
+| AI Model | Which underlying LLM or foundation model is used — often not visible to the EA team. |
+| Business Owner | The person or team accountable for the agent on the business side. |
 
-Note which fields are empty. The ones only the agent's owner can answer will be handled in Exercise 5.
+## Step 2 — Create a Survey Using AI
 
-## Step 2 — Assign Yourself as Responsible
+LeanIX's **Next Generation Survey** feature lets you generate a targeted survey from a plain-language description.
 
-1. Navigate to the **Subscriptions** tab on the fact sheet.
-2. Add yourself as **Responsible** subscriber.
-3. This records that you, as the EA team member, are the governance owner for this agent — separate from the business owner the survey will identify.
+1. In the top navigation, go to **More → Surveys**.
+2. Click **Create with AI**.
+3. Use the following prompt:
 
-## Step 3 — Generate a Description Using LeanIX AI
+   > *"Create a survey for an AI agent governance review. The respondent is the agent's business owner. The survey should collect the following fields: AI Agent Type (how the agent interacts with users), AI Risk classification per the EU AI Act, the AI Model or foundation model used, and the name and email of the accountable business owner."*
 
-If the agent description is missing or too thin for a governance review, LeanIX can draft one for you using built-in AI.
+4. Review the generated survey. Adjust the question wording if needed to fit the GlobalFlex AG context.
+5. Set the **fact sheet** the survey is linked to: your agent's fact sheet.
+6. Set the **respondent** to the dummy user provided by your trainer — the email address is on your session card.
+7. Add a short message to the respondent, for example:
 
-1. Open the **Edit** view of the fact sheet (click the pencil or hover the Description field to reveal the edit option).
-2. Look for the **AI-generate** option next to the Description field — usually shown as a sparkle icon or a "Generate" button.
-3. Click it. LeanIX drafts a description based on the agent name, its linked fact sheets, and available metadata.
-4. Review the generated text — adjust it if needed to accurately reflect what this agent does at GlobalFlex AG.
-5. Save the description.
+   > *"As part of GlobalFlex AG's AI governance process, we need your input on the agent you are responsible for. Please complete the fields below so we can complete the governance review."*
 
-> **Why this matters:** A description generated from metadata is a starting point, not a final answer. Your job as the EA team is to verify it against what you know and correct anything that does not reflect reality.
+## Step 3 — Send the Survey
 
-## Step 4 — Create an Architecture Decision via the EA Assistant
+1. Review the survey preview.
+2. Click **Send**.
+3. The respondent receives an email with a direct link to fill in the fields. The answers write back into the fact sheet automatically when submitted.
 
-GlobalFlex AG requires that every agent in the inventory is linked to an Architecture Decision Record documenting the governance rationale.
+> **What happens next:** Your trainer, acting as the agent's business owner, will fill in the survey response during the session and submit it. Watch your fact sheet — the fields will update once the response comes in.
 
-1. Navigate to **More** (top header) → **EA Assistant**.
-2. Use the following prompt:
+## Step 4 — Apply the Survey Response
 
-   > *"Create an architecture decision record for [your agent's name] based on the AI governance and adoption insights."*
+When your trainer signals that responses have been submitted:
 
-3. Review the generated ADR — it will include a Context, Decision, and Consequences section populated from your fact sheet data.
-4. **Save** the ADR. It links to your agent's fact sheet automatically.
-5. Confirm the architecture decision appears in the **Decisions** panel on the right sidebar.
+1. Refresh the fact sheet if needed.
+2. Review the values that arrived from the survey:
+   - **AI Agent Type** — does the classification match what you expected based on the agent's description?
+   - **AI Risk** — is the EU AI Act risk level appropriate for what this agent does?
+   - **AI Model** — note the underlying model. Does it affect your governance decision?
+3. If any value looks incorrect, discuss it with your group before proceeding.
+
+## Step 5 — Review the Change Log
+
+1. Navigate to the **Change Log** tab on your agent's fact sheet.
+2. Confirm that the survey-driven field updates appear as individual entries in the log.
+
+> **Why this matters:** The change log gives you an auditable trail — not just *what* the fields contain now, but *when* the information arrived, *who* provided it, and *how* it was collected (survey response vs. direct edit). This is what AI governance accountability looks like in practice.
 
 ## Summary
 
-The EA team's portion of the governance record is complete: you are the responsible owner, the description is documented, and an ADR has been created. The remaining fields — AI Agent Type, AI Risk, and AI Model — require input from the agent's business owner. In Exercise 5, you will send them a survey to collect that information.
+The fact sheet now has all required fields populated — partly by you (description, ADR link, observer subscription) and partly by the business owner via survey. This combination of structured self-service and targeted data collection is how AI governance scales without becoming a bottleneck.
 
-[Back: Exercise 3](../ex3/README.md) | [Next: Exercise 5 — Collect Missing Information via Survey](../ex5/README.md)
+Move on to Exercise 5 when your trainer confirms that survey responses have been submitted for all groups.
+
+[Back: Exercise 3](../ex3/README.md) | [Next: Exercise 5 — Verify the Agent](../ex5/README.md)

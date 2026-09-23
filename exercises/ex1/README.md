@@ -2,56 +2,59 @@
 
 ## Overview
 
-Before taking any governance action, you need to understand what is happening in your landscape. In this exercise you will orient yourself in the AI Agent Hub dashboard and inventory, then navigate to the Discovery Inbox to find the agent assigned to you for this workshop.
+Before reviewing any individual agent, your AI Governance Center of Excellence has just come out of a committee meeting with a policy decision that needs to be documented. In this exercise you will create an Architecture Decision Record (ADR) to formalize that policy, then orient yourself in the dashboard and inventory to understand the current state of AI at GlobalFlex AG.
 
-**Duration:** 15 minutes
+**Duration:** 20 minutes
 
 ## Background
 
-AI Agent Hub in SAP LeanIX continuously discovers agents across your connected SAP and third-party environments. It surfaces two types of agents in the inbox:
-- **Standard SAP agents** — discovered automatically from your connected SAP system (pre-loaded for this workshop)
-- **Custom agents** — built and deployed by teams in your organization, appearing alongside standard agents once connected systems report them
+GlobalFlex AG's AI governance committee has concluded that **all finance agents interacting with S/4HANA data must run on the SAP Joule Studio runtime** and must undergo formal governance review before going live. Your job is to document this as an official Architecture Decision Record so that every agent review from this point forward can be checked against it.
 
-Both types arrive in the same inbox and go through the same governance process. This is by design: governance applies regardless of who built the agent.
+You will use the **EA Assistant** — the AI-powered assistant in SAP LeanIX — to draft the ADR from a plain-language description.
 
-For this workshop, each participant has one agent pre-loaded in the Discovery Inbox. Your agent is named with your **participant number** from your session card — for example, *"GlobalFlex Procurement Assistant P07"*. You will govern this agent throughout the session.
+## Step 1 — Create an Architecture Decision
 
-## Step 1 — Review the Dashboard
+1. Navigate to **More** (top header) → **EA Assistant**.
+2. Use the following prompt to generate the ADR. Replace `[PXX]` with your participant number (e.g., P07):
 
-1. In SAP LeanIX, open the **AI Agent Hub Dashboard**.
+   > *"Create an architecture decision titled 'Finance Agents on S/4HANA Must Use Joule Studio Runtime — [PXX]' documenting the following policy: All AI agents that interact with S/4HANA financial data at GlobalFlex AG must be deployed on the SAP Joule Studio runtime. This decision applies to custom-built and third-party agents. Agents that do not comply must be migrated or decommissioned. The rationale is auditability, data residency compliance, and alignment with the SAP AI governance framework."*
+
+3. Review the generated ADR — it will include a **Context**, **Decision**, and **Consequences** section.
+4. **Save** the ADR.
+
+> **Why your participant number matters:** Because everyone in this session shares one workspace, including your participant number in the ADR title makes it easy to find your own ADR later when you link it to your agent in Exercise 3.
+
+> **Why this comes first:** Architecture decisions document policy at the organization level — before you look at any individual agent. In Exercise 3, you will link your agent to this ADR to show it is subject to this policy.
+
+## Step 2 — Review the Dashboard
+
+1. In SAP LeanIX, navigate to the **AI Agent Hub Dashboard**.
 2. Take a moment to read the overview. You should see:
    - Total agents, MCP servers, and LLMs in the inventory
+   - The AI pipeline: how many agents are in **Discovery**, **Inventory**, and **Verified** status
    - Agents by verification status (verified, unverified)
-   - Agents by discovery source — SAP system, third-party (e.g., ServiceNow)
-   - Recent governance activity
+   - **Connected systems** — Joule Studio, SAP Cloud ALM, Signavio, and others feeding discovery data into AI Agent Hub
+   - **Top AI models by token consumption** — which models are seeing the most usage across the landscape
 
-> **What you are seeing:** GlobalFlex AG has already connected its SAP system to AI Agent Hub. Standard agents have been discovered automatically. The inbox is waiting for your attention.
+> **What you are seeing:** GlobalFlex AG has already connected its SAP system to AI Agent Hub. The dashboard gives you a real-time governance posture: how many agents exist, how many are verified, and how much AI activity is happening in your landscape right now.
 
-## Step 2 — Explore the Inventory
+## Step 3 — Drill Into a Pre-Verified Agent
 
-1. Navigate briefly to the **Inventory** view.
-2. Use the filter to see agents grouped by type:
-   - **SAP Standard Agents** — delivered by SAP, part of licensed solutions
-   - **Custom Agents** — built by teams in your organization
-   - **Third-Party Agents** — running in external environments (e.g., ServiceNow, Microsoft)
-3. Return to the Dashboard when you are done.
+The dashboard shows agents already in the inventory. Before reviewing your own agent, take a moment to see what a fully governed agent looks like.
 
-## Step 3 — Find Your Agent in the Discovery Inbox
+1. Navigate to the **Inventory** view.
+2. Filter by: **Application** type + **AI Agent** subtype.
+3. Open the pre-loaded standard SAP agent that has already been verified for this workshop — your trainer will tell you which one to open.
+4. Explore the fact sheet:
+   - **Relations Explorer** — visualize which IT components, business capabilities, and other fact sheets this agent is connected to
+   - **Analytics** tab — view usage data: sessions, first/last active, average tokens per session
+   - **Subscriptions** — see who is assigned as Responsible and Observer
+   - **Change Log** — see the history of every governance action taken on this fact sheet
 
-1. Navigate to the **AI Agent Discovery Inbox**:
-   *Inventory → Inventory Tools (top right) → Discovery Inbox → AI Agent Discovery*
-2. Apply the filter **Status: Action Needed** to focus on unreviewed agents.
-3. Locate your agent by searching for your participant number — for example, *P07*.
-4. Open the discovery item and review the detail panel:
-   - **Description** — what the agent claims to do
-   - **Discovered Fact Sheets** — fact sheets AI Agent Hub has automatically suggested as related
-   - **Business Capability suggestion** — does the suggested mapping make sense for GlobalFlex AG?
-5. Do not add to inventory yet — that is the first step of Exercise 2.
-
-> **Discussion prompt:** Which agents in the inbox surprised you most — and why would they not already be on the EA team's radar at GlobalFlex AG?
+> **This is your audit trail.** Every field change, subscription update, and verification decision is recorded here. This is what a complete governance record looks like when you have finished today's exercises.
 
 ## Summary
 
-You have oriented yourself in the AI governance dashboard and located the agent you will govern throughout this workshop. In Exercise 2, you will review the full discovery details and add your agent to the inventory.
+You have documented a governance policy as an ADR and seen what a fully governed agent looks like in practice. In Exercise 2, you will find the agent assigned to you in the Discovery Inbox and begin the review process.
 
 [Back: Getting Started](../ex0/README.md) | [Next: Exercise 2 — From Discovery to Inventory](../ex2/README.md)
