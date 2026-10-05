@@ -2,7 +2,7 @@
 
 ## Overview
 
-Your agent is now in the inventory but its governance record is incomplete. In this exercise you will fill in what the EA team can determine independently — assign yourself as an observer, and link the agent to the Architecture Decision Record you created in Exercise 1. Fields that only the agent's business owner can answer (AI Agent Type, AI Risk, AI Model) will be collected in the next exercise via a survey.
+Your agent is now in the inventory but its governance record is incomplete. In this exercise you will fill in what the EA team can determine independently — assign yourself as an observer, and link the agent to the Architecture Decision Record you created in Exercise 1. Fields that only the agent's business owner can answer (AI Risk, AI Model, Business Criticality, Functional Fit, AI Agent Business Value, Technical Fit) will be collected in the next exercise via a survey.
 
 **Duration:** 15 minutes
 
@@ -14,10 +14,14 @@ Open your agent's fact sheet in SAP LeanIX and check the following:
 |-------|---------------|
 | **Description** | Should be pre-filled from the discovery data. Confirm it accurately describes what this agent does. |
 | **Responsible subscriber** | Auto-assigned to the person who deployed this agent in Joule Studio. Check who is listed. |
-| **Architecture Decision** | Not yet linked. You will link it in Step 3. |
-| **AI Agent Type** | Empty — requires the agent's business owner. Goes to survey in Exercise 4. |
+| **Build Type** | Should be pre-filled as **Custom** from the deployment metadata. Confirm it is set. |
+| **Architecture Decision** | Not yet linked. You will link it in Step 4. |
 | **AI Risk** | Empty — requires the agent's business owner. Goes to survey in Exercise 4. |
 | **AI Model** | Empty — requires the agent's business owner. Goes to survey in Exercise 4. |
+| **Business Criticality** | Empty — requires the agent's business owner. Goes to survey in Exercise 4. |
+| **Functional Fit** | Empty — requires the agent's business owner. Goes to survey in Exercise 4. |
+| **AI Agent Business Value** | Empty — requires the agent's business owner. Goes to survey in Exercise 4. |
+| **Technical Fit** | Empty — requires the agent's business owner. Goes to survey in Exercise 4. |
 
 ## Step 2 — Add Yourself as Observer
 
@@ -51,6 +55,6 @@ Your agent is subject to the policy you documented in Exercise 1. Now link them.
 
 ## Summary
 
-The EA team's portion of the governance record is now complete: you are assigned as Observer, the description is confirmed, and the ADR has been linked. The remaining fields — AI Agent Type, AI Risk, and AI Model — require input from the agent's business owner. In Exercise 4, you will send them a survey to collect that information.
+The EA team's portion of the governance record is now complete: you are assigned as Observer, the description is confirmed, and the ADR has been linked. The remaining fields — AI Risk, AI Model, Business Criticality, Functional Fit, AI Agent Business Value, and Technical Fit — require input from the agent's business owner. In Exercise 4, you will send them a survey to collect that information.
 
 [Back: Exercise 2](../ex2/README.md) | [Next: Exercise 4 — Collect Missing Information via Survey](../ex4/README.md)

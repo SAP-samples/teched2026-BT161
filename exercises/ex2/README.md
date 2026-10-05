@@ -2,7 +2,7 @@
 
 ## Overview
 
-Your agent is waiting in the Discovery Inbox. In this exercise you will open it, review the discovery details, check the usage analytics, and add your agent to the governed inventory.
+Your agent is waiting in the Discovery Inbox. In this exercise you will open it, review the discovery details, and add your agent to the governed inventory.
 
 **Duration:** 15 minutes
 
@@ -40,19 +40,12 @@ Click **Show all details** to open the full discovery record. Here you will find
 
 - **Region** — where the agent is deployed
 - **Environment** — whether this agent is running in a **productive** environment or a development/test environment
+- **Joule Studio link** — opens the agent project in Joule Studio. Note: as an EA team member you may not have access to Joule Studio directly — this link is primarily for the developer who built the agent.
+- **Cloud Identity Services link** — shows the agent's identity record. This confirms the agent has a registered identity, which means authentication, access policies, and user authorizations can be managed there.
 
 > **Why this matters:** A productive environment means real users are already interacting with this agent — potentially with access to live S/4HANA data — before any governance review has taken place.
 
-## Step 4 — Check the Analytics
-
-1. Open the **Analytics** tab on the discovery item.
-2. Review the usage data that AI Agent Hub has collected from **SAP Cloud ALM**:
-   - Total agent sessions
-   - Light quality indicators
-
-> **Think about it:** This agent was discovered *from the system* — not reported by the team that built it. In a real scenario, how long might an agent run before the EA team notices it?
-
-## Step 5 — Add to Inventory
+## Step 4 — Add to Inventory
 
 1. Return to the discovery item and click **Add to Inventory**.
 2. The agent is now part of the governed inventory — status changes to **Unverified**.

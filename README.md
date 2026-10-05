@@ -12,7 +12,7 @@ Working inside **SAP LeanIX**, you will use the AI Agent Hub capabilities to dis
 
 The IT department recently received an audit finding: **no central inventory of AI systems exists**, and several business units are running AI agents that touch sensitive data without formal risk assessment. The CIO has tasked the EA team to establish AI governance within 90 days.
 
-> You are a member of that EA team — part of the AI Governance Center of Excellence that GlobalFlex AG has just established. You start your week by opening SAP LeanIX — your command center for everything AI in the organization. New agents have been discovered. One of them has never been reviewed. You need to understand what it does, who owns it, whether it meets your governance requirements, and ultimately decide whether to approve it.
+> You are a member of that EA team — part of the AI Governance Center of Excellence that GlobalFlex AG has just established. You start your week by opening SAP LeanIX — your central entry point for everything AI in the organization. New agents have been discovered. One of them has never been reviewed. You need to understand what it does, who owns it, whether it meets your governance requirements, and ultimately decide whether to approve it.
 
 ## What You Will Learn
 
@@ -29,7 +29,7 @@ SAP LeanIX's AI Agent Hub gives you a single place to view and govern all AI age
 | # | Exercise | Description | Duration |
 |---|----------|-------------|----------|
 | GS | [Getting Started](exercises/ex0/README.md) | Log in to SAP LeanIX; orient in the AI Agent Hub interface | 10 min |
-| 1 | [The Governance Dashboard](exercises/ex1/README.md) | Create an architecture decision; explore the dashboard and inventory | 20 min |
+| 1 | [The AI Agent Hub Dashboard](exercises/ex1/README.md) | Create an architecture decision; explore the dashboard and inventory | 20 min |
 | 2 | [From Discovery to Inventory](exercises/ex2/README.md) | Review your agent's discovery details and analytics; add it to the governed inventory | 15 min |
 | 3 | [Complete the Governance Profile](exercises/ex3/README.md) | Assign yourself as observer; link the architecture decision; note what goes to the survey | 15 min |
 | 4 | [Collect Missing Information via Survey](exercises/ex4/README.md) | Send a survey to the agent's business owner for AI Type, AI Risk, AI Model, and Owner; wait for the response | 15 min |

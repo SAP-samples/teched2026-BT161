@@ -2,7 +2,7 @@
 
 ## Overview
 
-Not every governance gap can be filled by the EA team alone. Fields like AI Agent Type, AI Risk, AI Model, and the business-side Owner require input from the team that built or runs the agent. Chasing this information over email is slow and leaves no audit trail. LeanIX surveys let you request exactly the fields you need from exactly the right person — and the answers flow directly into the fact sheet.
+Not every governance gap can be filled by the EA team alone. Fields like AI Risk, AI Model, and the business-side context require input from the team that built or runs the agent. Chasing this information over email is slow and leaves no audit trail. LeanIX surveys let you request exactly the fields you need from exactly the right person — and the answers flow directly into the fact sheet.
 
 In this exercise you will use the **Next Generation Survey** feature to create a targeted survey with AI, send it to the agent's business owner, and then watch the fact sheet update — and the change log record — as the responses arrive.
 
@@ -14,10 +14,12 @@ Open your agent's fact sheet and confirm the following fields are still empty (t
 
 | Field | Why it needs the business owner |
 |---|---|
-| AI Agent Type | Only the team running the agent knows how it is invoked — conversational, automated, embedded, etc. |
-| AI Risk | The EU AI Act risk category requires the owner to assess impact on their domain. |
-| AI Model | Which underlying LLM or foundation model is used — often not visible to the EA team. |
-| Business Owner | The person or team accountable for the agent on the business side. |
+| **AI Risk** | The EU AI Act risk category requires the owner to assess impact on their domain. |
+| **AI Model** | Which underlying LLM or foundation model is used — often not visible to the EA team. |
+| **Business Criticality** | How critical this agent is to business operations — only the business side can assess this. |
+| **Functional Fit** | How well the agent meets the business need it was built for. |
+| **AI Agent Business Value** | The business value this agent delivers — requires the owner's perspective. |
+| **Technical Fit** | How well the agent fits the technical landscape — input from the deploying team. |
 
 ## Step 2 — Create a Survey Using AI
 
@@ -27,7 +29,7 @@ LeanIX's **Next Generation Survey** feature lets you generate a targeted survey 
 2. Click **Create with AI**.
 3. Use the following prompt:
 
-   > *"Create a survey for an AI agent governance review. The respondent is the agent's business owner. The survey should collect the following fields: AI Agent Type (how the agent interacts with users), AI Risk classification per the EU AI Act, the AI Model or foundation model used, and the name and email of the accountable business owner."*
+   > *"Create a survey for an AI agent governance review. The respondent is the agent's business owner. The survey should collect: AI Risk classification per the EU AI Act, the AI Model or foundation model used, Business Criticality, Functional Fit, AI Agent Business Value, and Technical Fit."*
 
 4. Review the generated survey. Adjust the question wording if needed to fit the GlobalFlex AG context.
 5. Set the **fact sheet** the survey is linked to: your agent's fact sheet.
@@ -50,10 +52,11 @@ When your trainer signals that responses have been submitted:
 
 1. Refresh the fact sheet if needed.
 2. Review the values that arrived from the survey:
-   - **AI Agent Type** — does the classification match what you expected based on the agent's description?
    - **AI Risk** — is the EU AI Act risk level appropriate for what this agent does?
    - **AI Model** — note the underlying model. Does it affect your governance decision?
-3. If any value looks incorrect, discuss it with your group before proceeding.
+   - **Business Criticality** — does the business side's assessment match your expectation?
+   - **Functional Fit** and **Technical Fit** — do these align with what you observed during discovery?
+3. If any value looks incorrect, discuss it with your workshop partner before proceeding. If you have questions, raise your hand and ask your trainer.
 
 ## Step 5 — Review the Change Log
 

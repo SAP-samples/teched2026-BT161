@@ -1,4 +1,4 @@
-# Exercise 1 — The Governance Dashboard
+# Exercise 1 — The AI Agent Hub Dashboard
 
 ## Overview
 
@@ -17,10 +17,11 @@ You will use the **EA Assistant** — the AI-powered assistant in SAP LeanIX —
 1. Navigate to **More** (top header) → **EA Assistant**.
 2. Use the following prompt to generate the ADR. Replace `[PXX]` with your participant number (e.g., P07):
 
-   > *"Create an architecture decision titled 'Finance Agents on S/4HANA Must Use Joule Studio Runtime — [PXX]' documenting the following policy: All AI agents that interact with S/4HANA financial data at GlobalFlex AG must be deployed on the SAP Joule Studio runtime. This decision applies to custom-built and third-party agents. Agents that do not comply must be migrated or decommissioned. The rationale is auditability, data residency compliance, and alignment with the SAP AI governance framework."*
+   > *"Create an architecture decision titled 'Finance Agents on S/4HANA Must Use Joule Studio Runtime — [PXX]' documenting the following policy: All AI agents that interact with S/4HANA financial data at GlobalFlex AG must be deployed on the SAP Joule Studio runtime. This decision applies to standard and custom-built agents. Agents that do not comply must be migrated or decommissioned. The rationale is auditability, data residency compliance, and alignment with the SAP AI governance framework."*
 
 3. Review the generated ADR — it will include a **Context**, **Decision**, and **Consequences** section.
-4. **Save** the ADR.
+
+> **The ADR is saved automatically and its status is set to Accepted.**
 
 > **Why your participant number matters:** Because everyone in this session shares one workspace, including your participant number in the ADR title makes it easy to find your own ADR later when you link it to your agent in Exercise 3.
 
@@ -34,7 +35,6 @@ You will use the **EA Assistant** — the AI-powered assistant in SAP LeanIX —
    - The AI pipeline: how many agents are in **Discovery**, **Inventory**, and **Verified** status
    - Agents by verification status (verified, unverified)
    - **Connected systems** — Joule Studio, SAP Cloud ALM, Signavio, and others feeding discovery data into AI Agent Hub
-   - **Top AI models by token consumption** — which models are seeing the most usage across the landscape
 
 > **What you are seeing:** GlobalFlex AG has already connected its SAP system to AI Agent Hub. The dashboard gives you a real-time governance posture: how many agents exist, how many are verified, and how much AI activity is happening in your landscape right now.
 
@@ -53,8 +53,21 @@ The dashboard shows agents already in the inventory. Before reviewing your own a
 
 > **This is your audit trail.** Every field change, subscription update, and verification decision is recorded here. This is what a complete governance record looks like when you have finished today's exercises.
 
+## Step 4 — Link the ADR to the Standard Agent
+
+You have now created an ADR and reviewed a standard SAP agent. Link them together: the EA Assistant session you opened in Step 1 is still active.
+
+1. Navigate back to **More** (top header) → **EA Assistant**.
+2. In the same session, use the following prompt (replace the agent name with the one your trainer specified):
+
+   > *"Please link this architecture decision to the [agent name] fact sheet."*
+
+3. The EA Assistant will link the standard agent to your ADR. Confirm the agent now appears in the **Affected Fact Sheets** section of the ADR.
+
+> **Why this matters:** Linking an existing standard agent to the ADR demonstrates the policy applies retroactively — not just to new custom agents, but to the entire governed landscape.
+
 ## Summary
 
-You have documented a governance policy as an ADR and seen what a fully governed agent looks like in practice. In Exercise 2, you will find the agent assigned to you in the Discovery Inbox and begin the review process.
+You have documented a governance policy as an ADR, seen what a fully governed agent looks like, and linked the standard agent to the policy. In Exercise 2, you will find the custom agent assigned to you in the Discovery Inbox and begin the review process.
 
 [Back: Getting Started](../ex0/README.md) | [Next: Exercise 2 — From Discovery to Inventory](../ex2/README.md)
