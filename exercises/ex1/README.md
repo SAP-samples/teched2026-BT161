@@ -44,7 +44,7 @@ The dashboard shows agents already in the inventory. Before reviewing your own a
 
 1. Navigate to the **Inventory** view.
 2. Filter by: **Application** type + **AI Agent** subtype.
-3. Open the pre-loaded standard SAP agent that has already been verified for this workshop — your trainer will tell you which one to open.
+3. Open the **Billing Adjustment Agent** — the pre-loaded standard SAP agent that has already been verified for this workshop.
 4. Explore the fact sheet:
    - **Relations Explorer** — visualize which IT components, business capabilities, and other fact sheets this agent is connected to
    - **Analytics** tab — view usage data: sessions, first/last active, average tokens per session
@@ -58,9 +58,9 @@ The dashboard shows agents already in the inventory. Before reviewing your own a
 You have now created an ADR and reviewed a standard SAP agent. Link them together: the EA Assistant session you opened in Step 1 is still active.
 
 1. Navigate back to **More** (top header) → **EA Assistant**.
-2. In the same session, use the following prompt (replace the agent name with the one your trainer specified):
+2. In the same session, use the following prompt:
 
-   > *"Please link this architecture decision to the [agent name] fact sheet."*
+   > *"Please link this architecture decision to the Billing Adjustment Agent fact sheet."*
 
 3. The EA Assistant will link the standard agent to your ADR. Confirm the agent now appears in the **Affected Fact Sheets** section of the ADR.
 

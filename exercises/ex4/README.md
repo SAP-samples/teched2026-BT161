@@ -26,27 +26,34 @@ Open your agent's fact sheet and confirm the following fields are still empty (t
 LeanIX's **Next Generation Survey** feature lets you generate a targeted survey from a plain-language description.
 
 1. In the top navigation, go to **More → Surveys**.
-2. Click **Create with AI**.
-3. Use the following prompt:
+2. Click **New Survey**.
+3. Use the following prompt. Replace `[PXX]` with your participant number (e.g., P07):
 
-   > *"Create a survey for an AI agent governance review. The respondent is the agent's business owner. The survey should collect: AI Risk classification per the EU AI Act, the AI Model or foundation model used, Business Criticality, Functional Fit, AI Agent Business Value, and Technical Fit."*
+   > *"Create a survey for an AI agent governance review for the custom agent [PXX]. The respondent is the agent's business owner. The survey should collect: AI Risk classification per the EU AI Act, the AI Model or foundation model used, Business Criticality, Functional Fit, AI Agent Business Value, and Technical Fit."*
 
-4. Review the generated survey. Adjust the question wording if needed to fit the GlobalFlex AG context.
-5. Set the **fact sheet** the survey is linked to: your agent's fact sheet.
-6. Set the **respondent** to the dummy user provided by your trainer — the email address is on your session card.
-7. Add a short message to the respondent, for example:
+   After submitting the prompt, the EA Assistant opens again and generates the survey. You can see the first draft of the survey on the left side of the display.
+
+4. Review the generated survey. Adjust the question wording if needed to fit the GlobalFlex AG context, then click **Next**.
+5. Under **Distribution mode**, select **One-off Survey**.
+6. Verify that the **Survey scope** shows only your agent (PXX). If it includes other fact sheets, click **Edit** or use **Change with AI** to correct it so the survey is scoped to your agent only.
+7. One respondent should be automatically selected based on the agent's responsible subscriber. Confirm the pre-selected user is correct.
+8. Open the **Invitation Email** section and add a short message to the respondent, for example:
 
    > *"As part of GlobalFlex AG's AI governance process, we need your input on the agent you are responsible for. Please complete the fields below so we can complete the governance review."*
 
-## Step 3 — Send the Survey
+9. Click **Next** to configure how responses are saved to fact sheets. Two options are available:
+   - **Save Directly** — responses are written to the fact sheet automatically on submission.
+   - **Review Before Saving** — responses are held for review before any fact sheet values are updated.
 
-1. Review the survey preview.
-2. Click **Send**.
-3. The respondent receives an email with a direct link to fill in the fields. The answers write back into the fact sheet automatically when submitted.
+   For this training, select **Save Directly**.
+
+10. Click **Send Survey**. The respondent receives an email with a direct link to fill in the fields. Answers write back into the fact sheet automatically on submission.
+
+11. You can review the status of your survey in the survey overview. Filter by **Created By** to show only surveys created by your user. Once the results are in, click **Results** to review the responses.
 
 > **What happens next:** Your trainer, acting as the agent's business owner, will fill in the survey response during the session and submit it. Watch your fact sheet — the fields will update once the response comes in.
 
-## Step 4 — Apply the Survey Response
+## Step 3 — Apply the Survey Response
 
 When your trainer signals that responses have been submitted:
 
@@ -58,7 +65,7 @@ When your trainer signals that responses have been submitted:
    - **Functional Fit** and **Technical Fit** — do these align with what you observed during discovery?
 3. If any value looks incorrect, discuss it with your workshop partner before proceeding. If you have questions, raise your hand and ask your trainer.
 
-## Step 5 — Review the Change Log
+## Step 4 — Review the Change Log
 
 1. Navigate to the **Change Log** tab on your agent's fact sheet.
 2. Confirm that the survey-driven field updates appear as individual entries in the log.
