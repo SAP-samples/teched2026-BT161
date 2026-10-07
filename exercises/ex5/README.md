@@ -21,10 +21,34 @@ Open your agent's fact sheet and verify that every item below is complete:
 - [ ] **Functional Fit** — received via survey (Exercise 4)
 - [ ] **AI Agent Business Value** — received via survey (Exercise 4)
 - [ ] **Technical Fit** — received via survey (Exercise 4)
+- [ ] **Lifecycle** — set to **Active** in Step 2 below
 
 If any item is still missing, address it before clicking Verify.
 
-## Step 2 — Mark as Verified
+## Step 2 — Set the Lifecycle to Active
+
+Before you verify the agent, record where it sits in its lifespan. In SAP LeanIX every fact sheet has a **Lifecycle** field that tracks this from planning through retirement, using five standard phases:
+
+| Phase | Meaning |
+|-------|---------|
+| **Plan** | Being considered or designed — not built yet |
+| **Phase In** | Being built, acquired, or rolled out |
+| **Active** | Productive and in active use |
+| **Phase Out** | Being retired or replaced, but still partly in use |
+| **End of Life** | No longer in use (you will set this in Exercise 6) |
+
+You do not fill in a status directly. Instead you set a **date** for each phase that applies, and SAP LeanIX works out the current phase by comparing those dates to today. Your agent is already running in production, so the phase that applies is **Active**.
+
+**To set it:**
+
+1. Open your agent's fact sheet. In the header area at the top (the "About" section), find the **Lifecycle** field. If nothing has been set yet, it shows as empty.
+2. Click the **Lifecycle** field to open the lifecycle editor. You will see the five phases listed above, each with a date field.
+3. In the **Active** row, set the date to **today** (in a real landscape you would use the agent's actual go-live date). You can leave the other phases empty.
+4. Click **Save**. The fact sheet header now shows the current phase as **Active**.
+
+> **Why this matters:** The lifecycle is date-driven, so the current phase (Active) is derived from the date you just set. Marking the agent Active means it is productive and approved for use — which is exactly what you are about to confirm with verification. It also makes the agent appear correctly on lifecycle and roadmap reports, and it opens the lifecycle you will formally close in Exercise 6. See [Lifecycle phases](https://help.sap.com/docs/LEANIX/72d375467c1e4dcb872dfa2998b6328d/2758657c7a441014904ede2a21796386.html?locale=en-US) in the SAP Help Portal.
+
+## Step 3 — Mark as Verified
 
 1. On the agent's fact sheet, locate the **Verification Badge** at the top of the fact sheet header.
 2. Click the **Verification Badge**.
@@ -33,7 +57,7 @@ If any item is still missing, address it before clicking Verify.
 
 The badge updates to **Agent Verified**.
 
-## Step 3 — Set the Approval State
+## Step 4 — Set the Approval State
 
 The **Verification Badge** and the **Approval State** are two separate governance signals — understanding the difference matters:
 

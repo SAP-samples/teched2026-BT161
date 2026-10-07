@@ -35,9 +35,9 @@ Document that your newly verified agent replaces this one.
 ## Step 3 — Update the Lifecycle to End of Life
 
 1. In the fact sheet header, open the **Lifecycle** field.
-2. Set the current phase to **End of Life**.
+2. Set the **End of Life** phase with today's date.
 
-> This signals that the agent is no longer in use. The change is recorded in the Change Log with a timestamp.
+> The lifecycle field is date-driven, so set the actual **End of Life date** — not just the phase label. This records *when* the agent was retired, which is what drives lifecycle and roadmap reports and the Change Log timestamp. This mirrors the **Active** phase you opened in Exercise 5: you are now closing the lifecycle you started.
 
 ## Step 4 — Remove the Verification
 
@@ -50,8 +50,18 @@ The badge reverts — the agent is no longer marked as approved for production u
 
 ## Summary
 
-You have completed the full governance lifecycle — from discovering a new agent all the way to formally decommissioning a legacy one. The decommissioning record is preserved in the Change Log and the successor link connects the two agents as a documented lineage. The legacy agent remains in the inventory as a historical record; it is not deleted.
+You have completed the full governance lifecycle — from discovering a new agent all the way to formally decommissioning a legacy one. The decommissioning record is preserved in the Change Log and the successor link connects the two agents as a documented lineage. The legacy agent remains in the inventory as a historical record; it is not deleted. (In a real landscape you would typically **archive** the fact sheet after a retention period, which removes it from active views while keeping its history.)
 
 > This is what the session title means by "From Discovery to Decommissioning" — governance is a continuous cycle, not a one-time event.
+
+## Going Further — Decommissioning at Portfolio Scale
+
+In this exercise you decommissioned one agent by editing its fact sheet directly — the right approach for a single, already-decided retirement. When you need to *plan* decommissioning across many agents or applications, SAP LeanIX offers a more powerful path: **Architecture and Road Map Planning** (formerly the Business Transformation Module). You model the retirement as a **Decommission** transformation tied to an initiative, preview the impact before applying it, visualize the sunset on a roadmap, and update the inventory with one click when the change happens.
+
+This is an advanced capability beyond the scope of today's beginner workshop, but worth knowing it exists:
+
+- [Target Architecture Planning](https://help.sap.com/docs/LEANIX/72d375467c1e4dcb872dfa2998b6328d/716633e9efed4de4a269ae0dce7df544.html?locale=en-US) — add transformations such as decommissioning an application and preview the impact
+- [Create AI-Related Transformations](https://help.sap.com/docs/LEANIX/72d375467c1e4dcb872dfa2998b6328d/275d58c37a441014962be776bd832558.html?locale=en-US) — plan AI agent and IT component changes on a transformation roadmap
+- [SAP LeanIX Architecture and Road Map Planning](https://help.sap.com/docs/LEANIX/72d375467c1e4dcb872dfa2998b6328d/2758bc147a441014b210c1a6641458da.html?locale=en-US) — overview of predefined transformations and roadmaps
 
 [Back: Exercise 5](../ex5/README.md) | [Return to Overview](../../README.md)
