@@ -4,7 +4,7 @@
 
 Not every governance gap can be filled by the EA team alone. Fields like AI Risk, AI Model, and the business-side context require input from the team that built or runs the agent. Chasing this information over email is slow and leaves no audit trail. LeanIX surveys let you request exactly the fields you need from exactly the right person — and the answers flow directly into the fact sheet.
 
-In this exercise you will use the **Next Generation Survey** feature to create a targeted survey with AI, send it to the agent's business owner, and then watch the fact sheet update — and the change log record — as the responses arrive.
+In this exercise you will use the **Next Generation Survey** feature to create a targeted survey with AI, send it to the agent's business owner, review the submitted response, and then save it to the fact sheet.
 
 **Duration:** 15 minutes
 
@@ -48,9 +48,9 @@ LeanIX's **Next Generation Survey** feature lets you generate a targeted survey 
    - **Save Directly** — responses are written to the fact sheet automatically on submission.
    - **Review Before Saving** — responses are held for review before any fact sheet values are updated.
 
-   For this training, select **Save Directly**.
+   For this training, select **Review Before Saving**.
 
-6. Click **Send Survey**. The respondent receives an email with a direct link to fill in the fields. Answers write back into the fact sheet automatically on submission.
+6. Click **Send Survey**. The respondent receives an email with a direct link to fill in the fields.
 
 7. You can review the status of your survey in the survey overview. Filter by **Created By** to show only surveys created by your user. Once the results are in, click **Results** to review the responses.
 
@@ -62,13 +62,14 @@ While you wait for the trainer to submit the responses, stay in the survey overv
 
 When your trainer signals that responses have been submitted:
 
-1. Refresh the fact sheet if needed.
-2. Review the values that arrived from the survey:
+1. In the survey overview, open your survey and click **Results**.
+2. Select **Save Response** to write the answers to the fact sheet. The response receives a green **Saved to Factsheet** badge confirming the data has been applied.
+3. Navigate to your agent's fact sheet and review the values that arrived from the survey:
    - **AI Risk** — is the EU AI Act risk level appropriate for what this agent does?
    - **AI Model** — note the underlying model. Does it affect your governance decision?
    - **Business Criticality** — does the business side's assessment match your expectation?
    - **Functional Fit** and **Technical Fit** — do these align with what you observed during discovery?
-3. If any value looks incorrect, discuss it with your workshop partner before proceeding. If you have questions, raise your hand and ask your trainer.
+4. If any value looks incorrect, discuss it with your workshop partner before proceeding. If you have questions, raise your hand and ask your trainer.
 
 ## Step 5 — Review the Change Log
 
