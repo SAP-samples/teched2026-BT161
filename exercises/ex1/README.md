@@ -8,7 +8,7 @@ Before reviewing any individual agent, your AI Governance Center of Excellence h
 
 ## Background
 
-GlobalFlex AG's AI governance committee has concluded that **all finance agents interacting with S/4HANA data must run on the SAP Joule Studio runtime** and must undergo formal governance review before going live. Your job is to document this as an official Architecture Decision Record so that every agent review from this point forward can be checked against it.
+GlobalFlex AG's AI governance committee has concluded that **all finance agents interacting with SAP S/4HANA data must run on the Joule Studio runtime** and must undergo formal governance review before going live. Your job is to document this as an official Architecture Decision Record so that every agent review from this point forward can be checked against it.
 
 You will use the **EA Assistant** — the AI-powered assistant in SAP LeanIX — to draft the ADR from a plain-language description.
 
@@ -17,7 +17,7 @@ You will use the **EA Assistant** — the AI-powered assistant in SAP LeanIX —
 1. Navigate to **More** (top header) → **EA Assistant**.
 2. Use the following prompt to generate the ADR. Replace `[PXX]` with your participant number (e.g., P07):
 
-   > *"Create an architecture decision titled 'Finance Agents on S/4HANA Must Use Joule Studio Runtime — [PXX]' documenting the following policy: All AI agents that interact with S/4HANA financial data at GlobalFlex AG must be deployed on the SAP Joule Studio runtime. This decision applies to standard and custom-built agents. Agents that do not comply must be migrated or decommissioned. The rationale is auditability, data residency compliance, and alignment with the SAP AI governance framework."*
+   > *"Create an architecture decision titled 'Finance Agents on SAP S/4HANA Must Use Joule Studio Runtime — [PXX]' documenting the following policy: All AI agents that interact with SAP S/4HANA financial data at GlobalFlex AG must be deployed on the Joule Studio runtime. This decision applies to standard and custom-built agents. Agents that do not comply must be migrated or decommissioned. The rationale is auditability, data residency compliance, and alignment with the SAP AI governance framework."*
 
 3. Review the generated ADR — it will include a **Context**, **Decision**, and **Consequences** section.
 
@@ -47,7 +47,8 @@ The dashboard shows agents already in the inventory. Before reviewing your own a
 3. Open the **Billing Adjustment Agent** — the pre-loaded standard SAP agent that has already been verified for this workshop.
 4. Explore the fact sheet:
    - **Relations Explorer** — visualize which IT components, business capabilities, and other fact sheets this agent is connected to
-   - **Analytics** tab — view usage data: sessions, first/last active, average tokens per session
+   - **Analytics** tab — view usage data: sessions, first/last active
+   - **Verification status** — confirm the agent is verified; also check whether the **Billing Adjustment Agent** in the inventory is verified
    - **Subscriptions** — see who is assigned as Responsible and Observer
    - **Change Log** — see the history of every governance action taken on this fact sheet
 

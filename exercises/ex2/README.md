@@ -8,7 +8,7 @@ Your agent is waiting in the Discovery Inbox. In this exercise you will open it,
 
 ## Background
 
-The AI Agent Discovery Inbox is where AI Agent Hub surfaces everything it has found. Agents arrive here from connected systems: standard SAP agents discovered automatically, and custom agents deployed by teams in your organization. Both go through the same review-and-approve process.
+The AI Agent Discovery Inbox is where AI Agent Hub surfaces everything it has found. Agents arrive here from connected systems: standard SAP agents provisioned via SAP for Me and custom agents deployed by teams in your organization on Joule Studio. Both go through the same review-and-approve process.
 
 Your agent was pre-loaded for this workshop to simulate a real discovery event: the EA team at GlobalFlex AG has no prior record of it, and it is your job to evaluate whether it belongs in the governed inventory.
 
@@ -43,7 +43,7 @@ Click **Show all details** to open the full discovery record. Here you will find
 - **Joule Studio link** — opens the agent project in Joule Studio. Note: as an EA team member you may not have access to Joule Studio directly — this link is primarily for the developer who built the agent.
 - **Cloud Identity Services link** — shows the agent's identity record. This confirms the agent has a registered identity, which means authentication, access policies, and user authorizations can be managed there.
 
-> **Why this matters:** A productive environment means real users are already interacting with this agent — potentially with access to live S/4HANA data — before any governance review has taken place.
+> **Why this matters:** A productive environment means real users are already interacting with this agent — potentially with access to live SAP S/4HANA data — before any governance review has taken place.
 
 ## Step 4 — Add to Inventory
 

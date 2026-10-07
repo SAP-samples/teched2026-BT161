@@ -10,7 +10,7 @@ Before the exercises begin, log in to SAP LeanIX and take a few minutes to orien
 
 | System | Purpose |
 |--------|---------|
-| SAP LeanIX (shared workspace) | Your command center for AI governance — AI Agent Hub lives here |
+| SAP LeanIX (shared workspace) | Your central entry point for AI governance — AI Agent Hub lives here |
 
 ## Step 1 — Log In to SAP LeanIX
 
@@ -29,8 +29,8 @@ Spend two minutes exploring the AI Agent Hub interface:
 - The **Dashboard** is your starting point — it gives you a real-time view of your AI governance posture.
 - The **Inventory** shows all agents, MCP servers, and LLMs known to the system — SAP standard, custom, and third-party.
 - The **AI Agent Discovery Inbox** surfaces governance actions that need your attention — new discoveries, pending reviews, and alerts. Navigate to it via: *Inventory → Inventory Tools (top right) → Discovery Inbox → AI Agent Discovery*
-- The **AI Governance Assistant** is available throughout the session to help you query your landscape in natural language.
+- The **Enterprise Architecture Assistant** is available throughout the session. It is a conversational AI solution that helps you research and analyze your enterprise architecture data using natural language directly in your workspace.
 
 > **Do not make any changes yet.** Exercise 1 starts from the Dashboard.
 
-[Next: Exercise 1 — The Governance Dashboard](../ex1/README.md)
+[Next: Exercise 1 — The AI Agent Hub Dashboard](../ex1/README.md)
