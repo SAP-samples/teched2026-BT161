@@ -23,6 +23,7 @@ SAP LeanIX's AI Agent Hub gives you a single place to view and govern all AI age
 - Complete a **governance profile**: assign yourself as observer, and link the agent to the architecture decision
 - Send a **survey** to the agent's business owner to collect missing fields — and wait for the response before verifying
 - **Verify** the agent once the full governance record is in place
+- **Decommission** a legacy agent by documenting its successor, closing the lifecycle, and removing its production approval
 
 ## Session Structure
 
@@ -34,8 +35,9 @@ SAP LeanIX's AI Agent Hub gives you a single place to view and govern all AI age
 | 3 | [Complete the Governance Profile](exercises/ex3/README.md) | Assign yourself as observer; link the architecture decision; note what goes to the survey | 15 min |
 | 4 | [Collect Missing Information via Survey](exercises/ex4/README.md) | Send a survey to the agent's business owner for AI Type, AI Risk, AI Model, and Owner; wait for the response | 15 min |
 | 5 | [Verify the Agent](exercises/ex5/README.md) | Confirm the full governance checklist is complete and mark the agent as verified | 15 min |
+| 6 | [Decommission a Legacy Agent](exercises/ex6/README.md) | Link successor, close the lifecycle, and unverify a Phase Out agent to complete the governance cycle | 10 min |
 
-**Total exercise time: 90 minutes**
+**Total exercise time: 100 minutes**
 
 ## Prerequisites
 

@@ -53,4 +53,4 @@ Your agent is now verified. This means that from a governance perspective, you h
 
 > **Note on the AI Governance checklist:** Workspace administrators can configure a custom governance checklist in **Administration → AI Governance**. In this shared workshop workspace you can view it but not modify it. In your own organization, you would use this to define exactly which fields must be completed before an agent can be verified.
 
-[Back: Exercise 4](../ex4/README.md) | [Return to Overview](../../README.md)
+[Back: Exercise 4](../ex4/README.md) | [Next: Exercise 6 — Decommission a Legacy Agent](../ex6/README.md)
