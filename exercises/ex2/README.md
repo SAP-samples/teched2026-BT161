@@ -8,7 +8,7 @@ Your agent is waiting in the Discovery Inbox. In this exercise you will open it,
 
 ## Background
 
-The AI Agent Discovery Inbox is where AI Agent Hub surfaces everything it has found. Agents arrive here from connected systems: standard SAP agents provisioned via SAP for Me and custom agents deployed by teams in your organization on Joule Studio. Both go through the same review-and-approve process.
+The AI Agent Discovery Inbox is where AI Agent Hub surfaces everything it has found. Agents arrive here from connected systems: standard SAP agents provisioned via SAP for Me, custom agents deployed by teams in your organization on Joule Studio, and third-party agents discovered from platforms such as Microsoft Entra ID, Google Cloud, AWS Bedrock, and ServiceNow. All agents, regardless of origin, go through the same review-and-approve process before entering the governed inventory. For a full list of supported discovery integrations, see [AI Agent Discovery](https://help.sap.com/docs/LEANIX/72d375467c1e4dcb872dfa2998b6328d/cd40550e6bc64547a0915446e108a472.html) in the SAP Help Portal.
 
 Your agent was pre-loaded for this workshop to simulate a real discovery event: the EA team at GlobalFlex AG has no prior record of it, and it is your job to evaluate whether it belongs in the governed inventory.
 
@@ -17,7 +17,7 @@ Your agent was pre-loaded for this workshop to simulate a real discovery event: 
 1. In SAP LeanIX, navigate to:
    **Inventory → Inventory Tools *(top right)* → Discovery Inbox → AI Agent Discovery**
 2. Apply the filter **Status: Action Needed** to focus on unreviewed agents.
-3. Apply the filter **Build Type: Custom** to narrow the list to agents built by teams in your organization.
+3. Add the **Build Type** filter via the **Add Filter** button, then select **Custom** to narrow the list to agents built by teams in your organization.
 4. Search for your participant number (e.g., *P07*) to find your agent.
 
 ## Step 2 — Review the Overview

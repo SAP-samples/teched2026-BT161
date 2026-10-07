@@ -12,6 +12,8 @@ GlobalFlex AG's AI governance committee has concluded that **all finance agents 
 
 You will use the **EA Assistant** — the AI-powered assistant in SAP LeanIX — to draft the ADR from a plain-language description.
 
+> **What is an Architecture Decision Record?** An ADR is a short document that captures an important architectural decision: what was decided, why, and what the implications are. Enterprise architects create ADRs when a policy or technical constraint must be made explicit and traceable — so that future reviews can verify compliance. The ADR you create here will be referenced again when you link it to your agent in Exercise 3, turning a committee decision into a verifiable governance control.
+
 ## Step 1 — Create an Architecture Decision
 
 1. Navigate to **More** (top header) → **EA Assistant**.
@@ -50,7 +52,7 @@ The dashboard shows agents already in the inventory. Before reviewing your own a
    - **Analytics** tab — view usage data: sessions, first/last active
    - **Verification status** — confirm the agent is verified; also check whether the **Billing Adjustment Agent** in the inventory is verified
    - **Subscriptions** — see who is assigned as Responsible and Observer
-   - **Change Log** — see the history of every governance action taken on this fact sheet
+   - **Last Updated** tab — this is the change log for the fact sheet; it shows the history of every governance action taken on this record
 
 > **This is your audit trail.** Every field change, subscription update, and verification decision is recorded here. This is what a complete governance record looks like when you have finished today's exercises.
 

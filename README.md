@@ -6,6 +6,14 @@ Shadow AI is already in your organization. This workshop shows you what to do ab
 
 Working inside **SAP LeanIX**, you will use the AI Agent Hub capabilities to discover agents across SAP and third-party software environments, assess them against governance criteria, assign ownership and risk classification, verify them, and communicate governance outcomes to stakeholders.
 
+## About SAP LeanIX and AI Agent Hub
+
+**SAP LeanIX** is SAP's enterprise architecture management platform. It gives EA and IT governance teams a single place to maintain the inventory of all applications, technologies, and AI agents running in their organization, track their lifecycles, and connect the architecture landscape to business capabilities and strategy.
+
+The **AI Agent Hub** is LeanIX's dedicated module for AI governance. It connects to SAP and third-party platforms to automatically discover AI agents, and provides structured workflows to assess, verify, and manage them across their full lifecycle. In this workshop, you take the role of an enterprise architect working in the LeanIX workspace.
+
+> A short introduction to SAP LeanIX and the AI Agent Hub will also be presented at the start of the session.
+
 ## Business Scenario
 
 **GlobalFlex AG** produces custom industrial components for the automotive and aerospace sectors. The company employs 8,000 people across 12 countries and runs a hybrid IT landscape with SAP S/4HANA as its ERP backbone, Microsoft 365 for collaboration, and a growing set of AI agents introduced by different lines of business — often without central visibility or governance.

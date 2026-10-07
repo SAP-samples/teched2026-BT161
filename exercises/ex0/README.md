@@ -16,7 +16,7 @@ Before the exercises begin, log in to SAP LeanIX and take a few minutes to orien
 
 1. Open your browser and navigate to the **SAP LeanIX URL** provided on your session card.
 2. Sign in with the shared workspace credentials provided.
-3. You should land on the **SAP LeanIX home screen**. Look for the **AI Agent Hub** section — this is where all the exercises take place.
+3. You should land on the **SAP LeanIX home screen**. Open the **AI Agent Hub** using the direct link on your session card — it points to `[workspace-url]/dashboard/ai-agent-hub-v2`. The AI Agent Hub is part of the Dashboards section and this is where all the exercises take place.
 
 ## Step 2 — Locate Your Participant Number
 
