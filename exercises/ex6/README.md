@@ -8,7 +8,9 @@ Governance is not only about approving new agents — it also means formally clo
 
 ## Background
 
-The custom Joule Studio agent you governed in Exercises 2–5 was introduced to replace an older agent: the **AWS Billing Agent**, a legacy finance agent that was originally deployed on AWS and is no longer the preferred solution. The AWS Billing Agent is already in **Phase Out** lifecycle — but the governance record has not been closed out. Without formal decommissioning, it could still be discovered, reactivated, or mistaken for an active agent.
+The custom Joule Studio agent you governed in Exercises 2–5 was introduced to replace an older agent: the **AWS Financial Close Agent**, a legacy finance agent built on AWS Bedrock by the Finance Controlling team in 2023 to automate month-end close activities (journal entry preparation, account reconciliations, intercompany balance matching). It was a valid solution at the time — but it runs on AWS infrastructure outside SAP's security perimeter, and it was built before the Joule Studio runtime policy was established.
+
+The AWS Financial Close Agent is already in **Phase Out** lifecycle — but the governance record has not been closed out. Without formal decommissioning, it could still be discovered, reactivated, or mistaken for an active agent.
 
 Your job is to complete the record: link the governing architecture decision, link the successor, update the lifecycle to End of Life, and remove the verification.
 
@@ -17,24 +19,24 @@ Your job is to complete the record: link the governing architecture decision, li
 1. Navigate to **More** (top header) → **EA Assistant**.
 2. Use the following prompt:
 
-   > *"Find the AWS Billing Agent."*
+   > *"Find the AWS Financial Close Agent."*
 
 3. Open the fact sheet returned by the assistant.
 
 ## Step 2 — Link the Architecture Decision
 
-The ADR you created in Exercise 1 — "Finance Agents on SAP S/4HANA Must Use Joule Studio Runtime" — is exactly why this agent is being retired. The AWS Billing Agent was not on Joule Studio, so it does not comply with the policy. Linking the ADR here closes the governance loop: the decision that triggered the decommissioning is traceable from the agent's fact sheet.
+The ADR you created in Exercise 1 — "Finance Agents on SAP S/4HANA Must Use Joule Studio Runtime" — is exactly why this agent is being retired. The AWS Financial Close Agent runs on AWS Bedrock rather than the Joule Studio runtime, so it does not comply with the policy. Linking the ADR here closes the governance loop: the decision that triggered the decommissioning is traceable from the agent's fact sheet.
 
 You can do this in two ways — choose one:
 
 **Option A — via EA Assistant** (continuing the session from Step 1):
 
-> *"Link my architecture decision [PXX] to the AWS Billing Agent."*
+> *"Link my architecture decision [PXX] to the AWS Financial Close Agent."*
 
 **Option B — from the ADR fact sheet:**
 
 1. Navigate to your ADR ("Finance Agents on SAP S/4HANA Must Use Joule Studio Runtime — [PXX]").
-2. In the **Affected Fact Sheets** section, add the **AWS Billing Agent**.
+2. In the **Affected Fact Sheets** section, add the **AWS Financial Close Agent**.
 
 ## Step 3 — Set the Successor
 
