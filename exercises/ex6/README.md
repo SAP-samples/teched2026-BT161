@@ -8,38 +8,50 @@ Governance is not only about approving new agents — it also means formally clo
 
 ## Background
 
-The custom agent you governed in Exercises 2–5 was introduced to replace an older agent that had been running in GlobalFlex AG's landscape. That legacy agent is already in **Phase Out** lifecycle — but the governance record has not been closed out. Without formal decommissioning, it could still be discovered, reactivated, or mistaken for an active agent.
+The custom Joule Studio agent you governed in Exercises 2–5 was introduced to replace an older agent: the **AWS Billing Agent**, a legacy finance agent that was originally deployed on AWS and is no longer the preferred solution. The AWS Billing Agent is already in **Phase Out** lifecycle — but the governance record has not been closed out. Without formal decommissioning, it could still be discovered, reactivated, or mistaken for an active agent.
 
-Your job is to complete the record: link the successor relationship, update the lifecycle to End of Life, and remove the verification.
+Your job is to complete the record: link the governing architecture decision, link the successor, update the lifecycle to End of Life, and remove the verification.
 
 ## Step 1 — Find the Legacy Agent
 
-Use the Enterprise Architecture Assistant to locate the legacy agent assigned to you.
-
 1. Navigate to **More** (top header) → **EA Assistant**.
-2. Use the following prompt. Replace `[PXX]` with your participant number:
+2. Use the following prompt:
 
-   > *"Find agents with [PXX] in the name that have a Phase Out lifecycle."*
+   > *"Find the AWS Billing Agent."*
 
 3. Open the fact sheet returned by the assistant.
 
-## Step 2 — Set the Successor
+## Step 2 — Link the Architecture Decision
 
-Document that your newly verified agent replaces this one.
+The ADR you created in Exercise 1 — "Finance Agents on SAP S/4HANA Must Use Joule Studio Runtime" — is exactly why this agent is being retired. The AWS Billing Agent was not on Joule Studio, so it does not comply with the policy. Linking the ADR here closes the governance loop: the decision that triggered the decommissioning is traceable from the agent's fact sheet.
 
-1. On the legacy agent's fact sheet, navigate to the **Relations** section.
-2. Find the **Successor** relation and add your verified custom agent (search for your participant number).
+You can do this in two ways — choose one:
+
+**Option A — via EA Assistant** (continuing the session from Step 1):
+
+> *"Link my architecture decision [PXX] to the AWS Billing Agent."*
+
+**Option B — from the ADR fact sheet:**
+
+1. Navigate to your ADR ("Finance Agents on SAP S/4HANA Must Use Joule Studio Runtime — [PXX]").
+2. In the **Affected Fact Sheets** section, add the **AWS Billing Agent**.
+
+## Step 3 — Set the Successor
+
+Document that your newly verified Joule Studio agent replaces this one.
+
+1. Still in the **Relations** section, find the **Successor** relation and add your verified custom agent (search for your participant number `[PXX]`).
 
 > **Why this matters:** Setting the successor creates a formal lineage record. Anyone looking at this legacy agent in the future will see exactly what replaced it — and when. The successor agent's fact sheet will show the legacy agent as its **Predecessor**.
 
-## Step 3 — Update the Lifecycle to End of Life
+## Step 4 — Update the Lifecycle to End of Life
 
 1. In the fact sheet header, open the **Lifecycle** field.
 2. Set the **End of Life** phase with today's date.
 
 > The lifecycle field is date-driven, so set the actual **End of Life date** — not just the phase label. This records *when* the agent was retired, which is what drives lifecycle and roadmap reports and the Change Log timestamp. This mirrors the **Active** phase you opened in Exercise 5: you are now closing the lifecycle you started.
 
-## Step 4 — Remove the Verification
+## Step 5 — Remove the Verification
 
 An End of Life agent should not carry a production-approved verification badge.
 
@@ -50,7 +62,7 @@ The badge reverts — the agent is no longer marked as approved for production u
 
 ## Summary
 
-You have completed the full governance lifecycle — from discovering a new agent all the way to formally decommissioning a legacy one. The decommissioning record is preserved in the Change Log and the successor link connects the two agents as a documented lineage. The legacy agent remains in the inventory as a historical record; it is not deleted. (In a real landscape you would typically **archive** the fact sheet after a retention period, which removes it from active views while keeping its history.)
+You have completed the full governance lifecycle — from discovering a new agent all the way to formally decommissioning a legacy one. The ADR links the policy decision that drove the retirement; the successor link connects the two agents as a documented lineage; and the decommissioning record is preserved in the Change Log. The legacy agent remains in the inventory as a historical record; it is not deleted. (In a real landscape you would typically **archive** the fact sheet after a retention period, which removes it from active views while keeping its history.)
 
 > This is what the session title means by "From Discovery to Decommissioning" — governance is a continuous cycle, not a one-time event.
 
