@@ -46,7 +46,7 @@ Your agent is subject to the policy you documented in Exercise 1. Now link them.
 
 1. Navigate to **More** (top header) → **EA Assistant** (or open the ADR directly from **Architecture Decisions**).
 2. Find the ADR you created in Exercise 1 — search for your participant number.
-3. Open the ADR and navigate to the **Affected Fact Sheets** section.
+3. Open the ADR and navigate to the **Impacted Fact Sheets** section.
 4. Add your agent's fact sheet to the ADR.
 
 > **Why from the ADR side?** Architecture decisions are linked by adding fact sheets to the ADR — not by editing individual fact sheets. This keeps the decision as the single source of truth: all agents subject to a policy are listed in one place.
