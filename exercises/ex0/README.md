@@ -8,14 +8,14 @@ Before the exercises begin, log in to SAP LeanIX and take a few minutes to orien
 
 ## Systems You Will Use
 
-| System | Purpose |
-|--------|---------|
-| SAP LeanIX (shared workspace) | Your central entry point for AI governance — AI Agent Hub lives here |
+| System | URL | Credentials |
+|--------|-----|-------------|
+| SAP LeanIX (shared workspace) | [https://url.sap/u5vhev](https://url.sap/u5vhev) | Shared at the start of the live session |
 
 ## Step 1 — Log In to SAP LeanIX
 
-1. Open your browser and navigate to the **SAP LeanIX URL** provided on your session card.
-2. Sign in with the shared workspace credentials provided.
+1. Open your browser and navigate to **[https://url.sap/u5vhev](https://url.sap/u5vhev)**.
+2. Sign in with the shared workspace credentials shared at the start of the session.
 3. You should land on the **SAP LeanIX home screen**. Open the **AI Agent Hub** using the direct link on your session card — it points to `[workspace-url]/dashboard/ai-agent-hub-v2`. The AI Agent Hub is part of the Dashboards section and this is where all the exercises take place.
 
 ## Step 2 — Locate Your Participant Number

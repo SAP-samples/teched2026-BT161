@@ -49,7 +49,7 @@ SAP LeanIX's AI Agent Hub gives you a single place to view and govern all AI age
 
 ## Prerequisites
 
-- Access to the shared **SAP LeanIX** workspace (credentials provided at the session)
+- Access to the shared **SAP LeanIX** workspace at [https://url.sap/u5vhev](https://url.sap/u5vhev) — credentials shared during the live session
 - A modern web browser (Chrome or Edge recommended)
 - No prior experience with SAP LeanIX or AI Agent Hub required
 
@@ -57,7 +57,7 @@ SAP LeanIX's AI Agent Hub gives you a single place to view and govern all AI age
 
 | System | URL | Credentials |
 |--------|-----|-------------|
-| SAP LeanIX | *(provided at session)* | *(provided at session)* |
+| SAP LeanIX | [https://url.sap/u5vhev](https://url.sap/u5vhev) | Shared during the live session |
 
 ## Related Sessions
 
