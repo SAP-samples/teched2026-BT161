@@ -73,7 +73,7 @@ When your trainer signals that responses have been submitted:
 
 ## Step 5 — Review the Change Log
 
-1. Navigate to the **Change Log** tab on your agent's fact sheet.
+1. Navigate to the **Last update* tab on your agent's fact sheet.
 2. Confirm that the survey-driven field updates appear as individual entries in the log.
 
 > **Why this matters:** The change log gives you an auditable trail — not just *what* the fields contain now, but *when* the information arrived, *who* provided it, and *how* it was collected (survey response vs. direct edit). This is what AI governance accountability looks like in practice.
