@@ -23,14 +23,16 @@ Open your agent's fact sheet in SAP LeanIX and check the following:
 | **AI Agent Business Value** | Empty — requires the agent's business owner. Goes to survey in Exercise 4. |
 | **Technical Fit** | Empty — requires the agent's business owner. Goes to survey in Exercise 4. |
 
-## Step 2 — Add Yourself as Observer
+## Step 2 — Assign Subscribers
 
-The **Responsible** subscriber is already set to the person who deployed the agent. As the EA team member reviewing this agent, your role is **Observer**.
+Subscriptions define who is accountable for a fact sheet and who receives updates when it changes. Two roles matter here:
+
+- **Responsible** — the business owner or deploying team. Accountable for the agent and will receive governance surveys.
+- **Observer** — the EA team member overseeing governance. Notified of changes without taking on operational accountability.
 
 1. Navigate to the **Subscriptions** section of the fact sheet.
 2. Add yourself as **Observer** subscriber.
-
-> **Why Observer, not Responsible?** The Responsible role belongs to the person accountable for the agent — the business owner or deploying team. The EA team oversees governance but does not own the agent itself. Observer means you will be notified of changes without taking on operational accountability.
+3. Assign **Joanne Rhode** (`joanne.rhode@sap.com`) as **Responsible** subscriber. She is the agent's business owner for this workshop scenario and will receive the governance survey in Exercise 4.
 
 ## Step 3 — Validate the Description
 

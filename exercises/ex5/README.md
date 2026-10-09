@@ -57,17 +57,17 @@ You do not fill in a status directly. Instead you set a **date** for each phase 
 
 The badge updates to **Agent Verified**.
 
-## Step 4 — Set the Approval State
+## Step 4 — Set the Quality Seal
 
-The **Verification Badge** and the **Approval State** are two separate governance signals — understanding the difference matters:
+The **Verification Badge** and the **Quality Seal** are two separate governance signals — understanding the difference matters:
 
 - **Verification Badge** (*Mark as Verified / Agent Verified*) — specific to AI agents, MCP servers, and LLMs. It means this agent has been reviewed and is approved to run productively. This is the AI governance signal.
-- **Approval State** (*Quality Seal*) — applies to all fact sheets in SAP LeanIX, not just agents. It signals that the data on this fact sheet has been reviewed and meets your organization's data quality standard.
+- **Quality Seal** (*Approval State*) — applies to all fact sheets in SAP LeanIX, not just agents. It signals that the data on this fact sheet has been reviewed and meets your organization's data quality standard.
 
 Both are meaningful — and both should be set.
 
-1. Locate the **Approval State** field on the fact sheet header (also called the Quality Seal).
-2. Set it to **Approved**.
+1. Locate the **Quality Seal** in the fact sheet header. It is displayed as a small status indicator near the top of the fact sheet — look for a dropdown or pill showing **Draft** or **Check Needed**.
+2. Click it and set the state to **Approved**.
 
 ## Summary
 
