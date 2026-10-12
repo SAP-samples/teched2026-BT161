@@ -1,4 +1,4 @@
-# From Discovery to Decommissioning: A Hands-On AI Governance Workshop
+# SAP AI Agent Hub: AI Governance Workshop from Discovery to Decommissioning
 
 ## Session Overview
 

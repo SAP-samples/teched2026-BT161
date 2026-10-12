@@ -68,7 +68,7 @@ The badge updates to reflect the rejected state — the agent is formally record
 
 You have completed the full governance lifecycle — from discovering a new agent all the way to formally decommissioning a legacy one. The ADR links the policy decision that drove the retirement; the successor link connects the two agents as a documented lineage; and the decommissioning record is preserved in the Last Updated tab. The legacy agent remains in the inventory as a historical record; it is not deleted. (In a real landscape you would typically **archive** the fact sheet after a retention period, which removes it from active views while keeping its history.)
 
-> This is what the session title means by "From Discovery to Decommissioning" — governance is a continuous cycle, not a one-time event.
+> This is what the session title means by "from discovery to decommissioning" — governance is a continuous cycle, not a one-time event.
 
 ## Going Further — Decommissioning at Portfolio Scale
 
