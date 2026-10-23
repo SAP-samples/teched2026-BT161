@@ -4,7 +4,6 @@
 
 Your agent is waiting in the Discovery Inbox. In this exercise you will open it, review the discovery details, and add your agent to the governed inventory.
 
-**Duration:** 15 minutes
 
 ## Background
 
@@ -16,9 +15,14 @@ Your agent was pre-loaded for this workshop to simulate a real discovery event: 
 
 1. In SAP LeanIX, navigate to:
    **Inventory → Inventory Tools *(top right)* → Discovery Inbox → AI Agent Discovery**
+
+   ![Inventory Tools menu showing the path to AI Agent Discovery Inbox](../../images/Exercise2Step1.1.png)
+
 2. Apply the filter **Status: Action Needed** to focus on unreviewed agents.
 3. Add the **Build Type** filter via the **Add Filter** button, then select **Custom** to narrow the list to agents built by teams in your organization.
 4. Search for your participant number (e.g., *P07*) to find your agent.
+
+   ![AI Agent Discovery Inbox filtered list showing discovered agents](../../images/Exercise2Step1.png)
 
 ## Step 2 — Review the Overview
 
@@ -44,6 +48,8 @@ Click **Show all details** to open the full discovery record. Here you will find
 - **Cloud Identity Services link** — shows the agent's identity record. This confirms the agent has a registered identity, which means authentication, access policies, and user authorizations can be managed there.
 
 > **Why this matters:** A productive environment means real users are already interacting with this agent — potentially with access to live SAP S/4HANA data — before any governance review has taken place.
+
+![Discovery item Details panel showing integration, build type, lifecycle status, and environment metadata](../../images/Exercise2Step2.png)
 
 ## Step 4 — Add to Inventory
 

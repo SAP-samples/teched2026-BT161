@@ -4,7 +4,6 @@
 
 Governance is not only about approving new agents — it also means formally closing out agents that are no longer needed. In this exercise you will decommission a legacy billing agent that has been replaced by the one you just verified, documenting the lineage and removing its production approval.
 
-**Duration:** 10 minutes
 
 ## Background
 

@@ -14,6 +14,10 @@ The **AI Agent Hub** is LeanIX's dedicated module for AI governance. It connects
 
 > A short introduction to SAP LeanIX and the AI Agent Hub will also be presented at the start of the session.
 
+![SAP Business AI Platform architecture diagram showing the relationship between Business Transformation Management (SAP Signavio, SAP LeanIX, SAP Cloud ALM), Joule Work, Autonomous Suite, and the customer-managed Global Account with SAP Integration Suite.](images/sap-business-ai-platform.png)
+
+*SAP Business AI Platform architecture. SAP LeanIX sits in the Business Transformation Management layer (top), alongside SAP Signavio and SAP Cloud ALM. The "Discover & Govern" arrow represents the core workflow of this workshop: AI agents are deployed across the customer-managed Global Account and connected 3rd party environments, and LeanIX provides the governance layer to discover, assess, and manage them.*
+
 ## Business Scenario
 
 **GlobalFlex AG** produces custom industrial components for the automotive and aerospace sectors. The company employs 8,000 people across 12 countries and runs a hybrid IT landscape with SAP S/4HANA as its ERP backbone, Microsoft 365 for collaboration, and a growing set of AI agents introduced by different lines of business — often without central visibility or governance.
@@ -57,7 +61,7 @@ SAP LeanIX's AI Agent Hub gives you a single place to view and govern all AI age
 
 | System | URL | Credentials |
 |--------|-----|-------------|
-| SAP LeanIX | [https://url.sap/u5vhev](https://url.sap/u5vhev) | Shared during the live session |
+| SAP LeanIX | [https://url.sap/u5vhev](https://url.sap/u5vhev) | User **BT161-0NN** (your participant number); password shared during the live session |
 
 ## Related Sessions
 

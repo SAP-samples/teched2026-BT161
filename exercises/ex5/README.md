@@ -4,7 +4,6 @@
 
 Verification is the governance decision point. When you mark an agent as verified in SAP LeanIX, you are formally approving it for production use in your organization.
 
-**Duration:** 15 minutes
 
 > **Before you start:** Confirm with your trainer that the survey responses from Exercise 4 have been submitted. Your fact sheet must show values for AI Risk, AI Model, Business Criticality, Functional Fit, AI Agent Business Value, and Technical Fit before you proceed.
 

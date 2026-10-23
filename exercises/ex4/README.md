@@ -6,7 +6,6 @@ Not every governance gap can be filled by the EA team alone. Fields like AI Risk
 
 In this exercise you will use the **Next Generation Survey** feature to create a targeted survey with AI, send it to the agent's business owner, review the submitted response, and then save it to the fact sheet.
 
-**Duration:** 15 minutes
 
 ## Step 1 — Identify the Fields to Survey
 
@@ -39,6 +38,9 @@ LeanIX's **Next Generation Survey** feature lets you generate a targeted survey 
 
 1. Under **Distribution mode**, select **One-off Survey**.
 2. Verify that the **Survey scope** shows only your agent (PXX). If it includes other fact sheets, click **Edit** or use **Change with AI** to correct it so the survey is scoped to your agent only.
+
+   ![Survey distribution step showing One-off Survey selected, survey scope with the agent, and the respondent pre-filled](../../images/Exercise4Step3.png)
+
 3. One respondent should be automatically selected based on the agent's responsible subscriber. Confirm the pre-selected user is correct.
 4. In the **Invitation Email** section, click **Include Personal Message** to open the message body (the auto-generated subject line is lengthy — a personal note makes the invitation clearer). Add a short message, for example:
 

@@ -4,7 +4,6 @@
 
 Before reviewing any individual agent, your AI Governance Center of Excellence has just come out of a committee meeting with a policy decision that needs to be documented. In this exercise you will create an Architecture Decision Record (ADR) to formalize that policy, then orient yourself in the dashboard and inventory to understand the current state of AI at GlobalFlex AG.
 
-**Duration:** 20 minutes
 
 ## Background
 
@@ -17,6 +16,9 @@ You will use the **EA Assistant** — the AI-powered assistant in SAP LeanIX —
 ## Step 1 — Create an Architecture Decision
 
 1. Navigate to **More** (top header) → **EA Assistant**.
+
+   ![AI Agent Hub Dashboard with the More menu open, showing the EA Assistant option](../../images/Exercise1Step1.png)
+
 2. Use the following prompt to generate the ADR. Replace `[PXX]` with your participant number (e.g., P07):
 
    > *"Create an architecture decision titled 'Finance Agents on SAP S/4HANA Must Use Joule Studio Runtime — [PXX]' documenting the following policy: All AI agents that interact with SAP S/4HANA financial data at GlobalFlex AG must be deployed on the Joule Studio runtime. This decision applies to standard and custom-built agents. Agents that do not comply must be migrated or decommissioned. The rationale is auditability, data residency compliance, and alignment with the SAP AI governance framework."*

@@ -4,7 +4,6 @@
 
 Your agent is now in the inventory but its governance record is incomplete. In this exercise you will fill in what the EA team can determine independently — assign yourself as an observer, and link the agent to the Architecture Decision Record you created in Exercise 1. Fields that only the agent's business owner can answer (AI Risk, AI Model, Business Criticality, Functional Fit, AI Agent Business Value, Technical Fit) will be collected in the next exercise via a survey.
 
-**Duration:** 15 minutes
 
 ## Step 1 — Review the Fact Sheet for Gaps
 
@@ -22,6 +21,8 @@ Open your agent's fact sheet in SAP LeanIX and check the following:
 | **Functional Fit** | Empty — requires the agent's business owner. Goes to survey in Exercise 4. |
 | **AI Agent Business Value** | Empty — requires the agent's business owner. Goes to survey in Exercise 4. |
 | **Technical Fit** | Empty — requires the agent's business owner. Goes to survey in Exercise 4. |
+
+![Agent fact sheet open showing the governance profile with the EA Assistant panel](../../images/Exercise3Step1.png)
 
 ## Step 2 — Assign Subscribers
 
