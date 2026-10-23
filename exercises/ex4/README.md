@@ -28,11 +28,13 @@ LeanIX's **Next Generation Survey** feature lets you generate a targeted survey 
 2. Click **New Survey**.
 3. Use the following prompt. Replace `[PXX]` with your participant number (e.g., P07):
 
-   > *"Create a survey for an AI agent governance review for the custom agent [PXX]. The respondent is the agent's business owner. The survey should collect: AI Risk, the AI Model or foundation model used, Business Criticality, Functional Fit, AI Agent Business Value, and Technical Fit."*
+   > *"Create a survey for an AI agent governance review for the custom agent billing-document-retrieval-[PXX]. The respondent is the agent's business owner. The survey should collect: AI Risk, the AI Model or foundation model used, Business Criticality, Functional Fit, AI Agent Business Value, and Technical Fit."*
 
    After submitting the prompt, the EA Assistant opens again and generates the survey. You can see the first draft of the survey on the left side of the display.
 
 4. Review the generated survey. Check that the **AI Risk** question is included — if it is not, click **Add Fact Sheet Field** in the survey editor and search for **AI Risk** to add it manually. This field is required before the agent can be verified. Adjust the question wording if needed to fit the GlobalFlex AG context, then click **Next**.
+
+   ![EA Assistant survey design step showing the generated survey questions and the prompt used to create it](../../images/Exercise4Step2.png)
 
 ## Step 3 — Configure and Send
 
@@ -67,6 +69,9 @@ When your trainer signals that responses have been submitted:
 1. Navigate to **More → Surveys** and filter by **Created By** to find your survey. If you were already viewing the survey, **reload the page** so the submitted response appears.
 2. Open your survey and click **Results**.
 2. Select **Save Response** to write the answers to the fact sheet. The response receives a green **Saved to Factsheet** badge confirming the data has been applied.
+
+   ![Survey results page showing the Saved to Fact Sheet badge and the AI Risk field with the submitted response](../../images/Exercise4Step4.png)
+
 3. Navigate to your agent's fact sheet and review the values that arrived from the survey:
    - **AI Risk** — is the EU AI Act risk level appropriate for what this agent does?
    - **AI Model** — note the underlying model. Does it affect your governance decision?
@@ -78,6 +83,8 @@ When your trainer signals that responses have been submitted:
 
 1. Navigate to the **Last update* tab on your agent's fact sheet.
 2. Confirm that the survey-driven field updates appear as individual entries in the log.
+
+   ![Fact sheet Last update tab showing change log entries from the survey response](../../images/Exercise4Step5.png)
 
 > **Why this matters:** The change log gives you an auditable trail — not just *what* the fields contain now, but *when* the information arrived, *who* provided it, and *how* it was collected (survey response vs. direct edit). This is what AI governance accountability looks like in practice.
 

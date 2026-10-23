@@ -51,8 +51,11 @@ You do not fill in a status directly. Instead you set a **date** for each phase 
 
 1. On the agent's fact sheet, locate the **Verification Badge** at the top of the fact sheet header.
 2. Click the **Verification Badge**.
-3. In the popup, select **Mark as Verified**.
-4. Confirm.
+3. In the popup, select **Mark as Verified**. A confirmation dialog appears showing the agent's governance details.
+
+   ![Verify AI Agent confirmation dialog showing the agent's Autonomy Level, Build Type, AI Risk, and Responsibles before confirming verification](../../images/Exercise5Step3.png)
+
+4. Click **Verify AI Agent** to confirm.
 
 The badge updates to **Agent Verified**.
 
@@ -67,6 +70,8 @@ Both are meaningful — and both should be set.
 
 1. Locate the **Quality Seal** in the fact sheet header. It is displayed as a small status indicator near the top of the fact sheet — look for a dropdown or pill showing **Draft** or **Check Needed**.
 2. Click it and set the state to **Approved**.
+
+   ![Fact sheet header showing the Quality Seal dropdown open with the Approve Fact Sheet option](../../images/Exercise5Step4.png)
 
 ## Summary
 

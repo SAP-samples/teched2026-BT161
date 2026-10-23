@@ -32,10 +32,14 @@ You can do this in two ways — choose one:
 
 > *"Link my architecture decision [PXX] to the AWS Billing Document Retrieval Agent [PXX]."*
 
+   ![EA Assistant panel showing the agent found and the ADR link prompt being composed](../../images/Exercise5Step2.1.png)
+
 **Option B — from the ADR fact sheet:**
 
 1. Navigate to your ADR ("Finance Agents on SAP S/4HANA Must Use Joule Studio Runtime — [PXX]").
 2. In the **Affected Fact Sheets** section, add the **AWS Billing Document Retrieval Agent [PXX]**.
+
+   ![ADR fact sheet showing the Consequences section and Impacted Fact Sheets with both agents linked](../../images/Step5Exercise2.2.png)
 
 ## Step 3 — Set the Successor
 
@@ -44,6 +48,8 @@ Document that your newly verified Joule Studio agent replaces this one.
 1. In the fact sheet, scroll to the **Information** section. Under **Relationship Explorer**, find the **Successors** subsection. 
 2. Add your verified custom agent as the successor (search for your participant number `[PXX]`).
 3. Set an **Active From** date matching the **Active** date you set on your custom agent in Exercise 5. This records when the successor took over.
+
+   ![Successor relationship editor showing the custom agent linked as successor with the Active From date set](../../images/Exercise6Step3.png)
 
 > **Why this matters:** Setting the successor creates a formal lineage record. Anyone looking at this legacy agent in the future will see exactly what replaced it — and when. The successor agent's fact sheet will show the legacy agent as its **Predecessor**.
 
@@ -60,6 +66,8 @@ An End of Life agent should not carry a production-approved verification badge. 
 
 1. Locate the **Verification Badge** at the top of the fact sheet header.
 2. Click the badge and select **Mark as Rejected**.
+
+   ![Verification badge dropdown showing the Mark as Rejected option](../../images/Exercise6Step5.png)
 
 The badge updates to reflect the rejected state — the agent is formally recorded as no longer approved for production use.
 
