@@ -15,9 +15,9 @@ You will use the **EA Assistant** — the AI-powered assistant in SAP LeanIX —
 
 ## Step 1 — Create an Architecture Decision
 
-1. Navigate to **More** (top header) → **EA Assistant**.
+1. Click the **EA Assistant** icon (stars icon) in the header toolbar, next to the **Full View** switcher.
 
-   ![AI Agent Hub Dashboard with the More menu open, showing the EA Assistant option](../../images/Exercise1Step1.png)
+   ![Header toolbar showing the EA Assistant icon with stars next to the Full View switcher](../../images/EAAssistantHeaderIcon.png)
 
 2. Use the following prompt to generate the ADR. Replace `[PXX]` with your participant number (e.g., P07):
 
@@ -62,7 +62,7 @@ The dashboard shows agents already in the inventory. Before reviewing your own a
 
 You have now created an ADR and reviewed a standard SAP agent. Link them together: the EA Assistant session you opened in Step 1 is still active.
 
-1. Navigate back to **More** (top header) → **EA Assistant**.
+1. Navigate back to the **EA Assistant** icon (stars icon) in the header toolbar.
 2. In the same session, use the following prompt:
 
    > *"Please link this architecture decision to the Billing Adjustment Agent fact sheet."*

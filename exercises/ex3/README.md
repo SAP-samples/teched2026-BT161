@@ -47,7 +47,7 @@ The agent description was pulled in automatically during discovery. Before proce
 
 Your agent is subject to the policy you documented in Exercise 1. Now link them.
 
-1. Navigate to **More** (top header) → **EA Assistant** (or open the ADR directly from **Architecture Decisions**).
+1. Click the **EA Assistant** icon (stars icon) in the header toolbar (or open the ADR directly from **Architecture Decisions**).
 2. Find the ADR you created in Exercise 1 — search for your participant number.
 3. Open the ADR and navigate to the **Impacted Fact Sheets** section.
 4. Add your agent's fact sheet to the ADR.

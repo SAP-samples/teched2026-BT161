@@ -43,9 +43,9 @@ Spend two minutes exploring the AI Agent Hub interface:
 - The **Dashboard** is your starting point — it gives you a real-time view of your AI governance posture.
 - The **Inventory** shows all agents, MCP servers, and LLMs known to the system — SAP standard, custom, and third-party.
 - The **AI Agent Discovery Inbox** surfaces governance actions that need your attention — new discoveries, pending reviews, and alerts. Navigate to it via: *Inventory → Inventory Tools (top right) → Discovery Inbox → AI Agent Discovery*
-- The **Enterprise Architecture Assistant** is available throughout the session. It is a conversational AI solution that helps you research and analyze your enterprise architecture data using natural language directly in your workspace.
+- The **Enterprise Architecture Assistant** is available throughout the session. It is a conversational AI solution that helps you research and analyze your enterprise architecture data using natural language directly in your workspace. Open it by clicking the **EA Assistant** icon (stars icon) in the header toolbar, next to the **Full View** switcher.
 
-   ![More menu open showing the EA Assistant option](../../images/Exercise0Step3.png)
+   ![Header toolbar showing the EA Assistant icon with stars next to the Full View switcher](../../images/EAAssistantHeaderIcon.png)
 
 > **Do not make any changes yet.** Exercise 1 starts from the Dashboard.
 

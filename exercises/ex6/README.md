@@ -15,7 +15,7 @@ Your job is to complete the record: link the governing architecture decision, li
 
 ## Step 1 — Find the Legacy Agent
 
-1. Navigate to **More** (top header) → **EA Assistant**.
+1. Click the **EA Assistant** icon (stars icon) in the header toolbar, next to the **Full View** switcher.
 2. Use the following prompt:
 
    > *"Find the AWS Billing Document Retrieval Agent [PXX]."*
