@@ -1,5 +1,7 @@
 # SAP AI Agent Hub: AI Governance Workshop from Discovery to Decommissioning
 
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2026-BT161)](https://api.reuse.software/info/github.com/SAP-samples/teched2026-BT161)
+
 ## Session Overview
 
 Shadow AI is already in your organization. This workshop shows you what to do about it.
