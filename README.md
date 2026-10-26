@@ -106,5 +106,5 @@ Please read the [SAP Open Source Code of Conduct](https://github.com/SAP-samples
 
 ## License
 
-Copyright 2026 SAP SE or an SAP affiliate company and teched2026-BT160 contributors. Please see our [LICENSE](LICENSE) for copyright and license information. Detailed information including third-party components and their licensing/copyright information is available [via the REUSE tool](https://api.reuse.software/info/github.com/SAP-samples/teched2026-BT160).
+Copyright 2026 SAP SE or an SAP affiliate company and teched2026-BT161 contributors. Please see our [LICENSE](LICENSE) for copyright and license information. Detailed information including third-party components and their licensing/copyright information is available [via the REUSE tool](https://api.reuse.software/info/github.com/SAP-samples/teched2026-BT161).
 
