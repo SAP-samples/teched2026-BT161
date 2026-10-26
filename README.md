@@ -1,5 +1,7 @@
 # SAP AI Agent Hub: AI Governance Workshop from Discovery to Decommissioning
 
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2026-BT161)](https://api.reuse.software/info/github.com/SAP-samples/teched2026-BT161)
+
 ## Session Overview
 
 Shadow AI is already in your organization. This workshop shows you what to do about it.
@@ -88,3 +90,21 @@ Attending sessions in the **Accelerate and Derisk Your AI-Native Transformation*
 - [SAP AI Agent Hub Documentation](https://help.sap.com)
 - [SAP LeanIX — EA Context for AI Governance](https://www.leanix.net)
 - [EU AI Act — Official Text](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689)
+
+
+## How to obtain support
+
+Support for the content in this repository is available during the actual time of the online session for which this content has been designed. Otherwise, you may request support via the [Issues](../../issues) tab.
+
+## Contributing
+
+Please read the [CONTRIBUTING.md](./CONTRIBUTING.md) to understand the contribution guidelines.
+
+## Code of Conduct
+
+Please read the [SAP Open Source Code of Conduct](https://github.com/SAP-samples/.github/blob/main/CODE_OF_CONDUCT.md).
+
+## License
+
+Copyright 2026 SAP SE or an SAP affiliate company and teched2026-BT160 contributors. Please see our [LICENSE](LICENSE) for copyright and license information. Detailed information including third-party components and their licensing/copyright information is available [via the REUSE tool](https://api.reuse.software/info/github.com/SAP-samples/teched2026-BT160).
+
