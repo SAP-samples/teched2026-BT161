@@ -22,8 +22,6 @@ Open your agent's fact sheet in SAP LeanIX and check the following:
 | **AI Agent Business Value** | Empty — requires the agent's business owner. Goes to survey in Exercise 4. |
 | **Technical Fit** | Empty — requires the agent's business owner. Goes to survey in Exercise 4. |
 
-![Agent fact sheet open showing the governance profile with the EA Assistant panel](../../images/Exercise3Step1.png)
-
 ## Step 2 — Assign Subscribers
 
 Subscriptions define who is accountable for a fact sheet and who receives updates when it changes. Two roles matter here:
@@ -55,6 +53,8 @@ Your agent is subject to the policy you documented in Exercise 1. Now link them.
 > **Why from the ADR side?** Architecture decisions are linked by adding fact sheets to the ADR — not by editing individual fact sheets. This keeps the decision as the single source of truth: all agents subject to a policy are listed in one place.
 
 5. Return to your agent's fact sheet and confirm the ADR now appears in the **Decisions** panel in the right sidebar.
+
+   ![Agent fact sheet showing the governance profile with the linked Architecture Decision](../../images/Exercise3Step1.png)
 
 ## Summary
 
