@@ -31,7 +31,7 @@ Subscriptions define who is accountable for a fact sheet and who receives update
 
 1. Navigate to the **Subscriptions** section of the fact sheet.
 2. Add yourself as **Observer** subscriber.
-3. Assign **Joanne Rhode** (`joanne.rhode@sap.com`) as **Responsible** subscriber. She is the agent's business owner for this workshop scenario and will receive the governance survey in Exercise 4.
+3. Assign the user provided by your trainer as **Responsible** subscriber. This is the agent's business owner for this workshop scenario and will receive the governance survey in Exercise 4.
 
 ## Step 3 — Validate the Description
 
